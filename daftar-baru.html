@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <link
+      rel="icon"
+      href="assets/img/kaiadmin/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts and icons -->
+    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="assets/css/demo.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <div class="sidebar" data-background-color="dark">
+        <div class="sidebar-logo">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="index.html" class="logo">
+              <img
+                src="assets/img/kaiadmin/logo_light.png"
+                alt="navbar brand"
+                class="navbar-brand"
+                height="30"
+              />
+            </a>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="gg-menu-right"></i>
+              </button>
+              <button class="btn btn-toggle sidenav-toggler">
+                <i class="gg-menu-left"></i>
+              </button>
+            </div>
+            <button class="topbar-toggler more">
+              <i class="gg-more-vertical-alt"></i>
+            </button>
+          </div>
+          <!-- End Logo Header -->
+        </div>
+        <div class="sidebar-wrapper scrollbar scrollbar-inner">
+          <div class="sidebar-content">
+            <ul class="nav nav-secondary">
+              <li class="nav-item active">
+                <a data-bs-toggle="collapse" href="#" >
+                  <i class="fas fa-home"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-bs-toggle="collapse" href="#base">
+                  <i class="fas fa-database"></i>
+                  <p>Data Master</p>
+                  <span class="caret"></span>
+                </a>
+                <div class="collapse" id="base">
+                  <ul class="nav nav-collapse">
+                    <li>
+                      <a href="">
+                        <i class="fas fa-university"></i>
+                        <span>Pondok</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/panitia.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Panitia</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/lembaga.html">
+                        <i class="fas fa-store-alt"></i>
+                        <span>Lembaga</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/tahun-ajaran.html">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Tahun Ajaran</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/asrama.html">
+                        <i class="fas fa-building"></i>
+                        <span>Asrama</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/pengguna.html">
+                        <i class="fas fa-users"></i>
+                        <span>Pengguna</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="/daftar-baru.html">
+                  <i class="fas fa-pen"></i>
+                  <p>Pendaftaran Santri</p>
+                </a>
+                
+              </li>
+              <li class="nav-item">
+                <a href="/data-santri-baru.html">
+                  <i class="fas fa-address-book"></i>
+                  <p>Data Santri Baru</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  href="/data-daftar-ulang.html">
+                  <i class="fas fa-id-card"></i>
+                  <p>Data Daftar Ulang</p>
+                </a> 
+              </li>
+              <li class="nav-item">
+                <a  href="/verivikasi-pembayaran.html">
+                  <i class="fas fa-money-bill-wave"></i>
+                  <p>Verifikasi Pembayaran</p>
+                </a> 
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="main-panel">
+        <div class="main-header">
+          <div class="main-header-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" data-background-color="dark">
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/img/kaiadmin/logo_light.svg"
+                  alt="navbar brand"
+                  class="navbar-brand"
+                  height="20"
+                />
+              </a>
+              <div class="nav-toggle">
+                <button class="btn btn-toggle toggle-sidebar">
+                  <i class="gg-menu-right"></i>
+                </button>
+                <button class="btn btn-toggle sidenav-toggler">
+                  <i class="gg-menu-left"></i>
+                </button>
+              </div>
+              <button class="topbar-toggler more">
+                <i class="gg-more-vertical-alt"></i>
+              </button>
+            </div>
+            <!-- End Logo Header -->
+          </div>
+          <!-- Navbar Header -->
+          <nav
+            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
+          >
+            <div class="container-fluid">
+              
+
+              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+                <li class="nav-item topbar-user dropdown hidden-caret">
+                  <a
+                    class="dropdown-toggle profile-pic"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    aria-expanded="false"
+                  >
+                    <div class="avatar-sm">
+                      <img
+                        src="assets/img/profile.jpg"
+                        alt="..."
+                        class="avatar-img rounded-circle"
+                      />
+                    </div>
+                    <span class="profile-username">
+                      <span class="op-7">Hi,</span>
+                      <span class="fw-bold">Hizrian</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="avatar-lg">
+                            <img
+                              src="assets/img/profile.jpg"
+                              alt="image profile"
+                              class="avatar-img rounded"
+                            />
+                          </div>
+                          <div class="u-text">
+                            <h4>Hizrian</h4>
+                            
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        
+                        <a class="dropdown-item" href="#">Ubah Password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+
+        <div class="container">
+          <div class="page-inner">
+<!-- ============================= FORMULIR =========================================================== -->
+ <h1 align="center"><b>FORMULIR PENDAFTARAN SANTRI BARU TP. 2025/2026</b></h1>
+<form action="" method="post" enctype="multipart/form-data">
+  <!-- LEMBAGA DAN ASRAMA -->
+  <div>
+    <div class="form-group">
+      <label for="pilihLembaga">Pilih Lembaga</label>
+      <select
+        class="form-select form-control-lg"
+        id="pilihLembaga"
+      >
+        <option>MA AL-AZIZIYAH PUTRA</option>
+        <option>MA AL-AZIZIYAH PUTRI</option>
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="pilihLembaga">Pilihan Asrama Pertama</label>
+          <select
+            class="form-select form-control-lg"
+            id="pilihLembaga"
+          >
+            <option>ASRAMA UTAMA PUTRA</option>
+            <option>ASRAMA UTAMA PUTRI</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="pilihLembaga">Pilihan Asrama Kedua</label>
+          <select
+            class="form-select form-control-lg"
+            id="pilihLembaga"
+          >
+            <option>ASRAMA UTAMA PUTRA</option>
+            <option>ASRAMA UTAMA PUTRI</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="pilihLembaga">Pilihan Asrama Ketiga</label>
+          <select
+            class="form-select form-control-lg"
+            id="pilihLembaga"
+          >
+            <option>ASRAMA UTAMA PUTRA</option>
+            <option>ASRAMA UTAMA PUTRI</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+  <!-- DATA SANTRI -->
+  <h5><b>A. DATA CALON PESERTA DIDIK</b></h5>
+  <div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon3">NISN (Nomor Induk Siswa Nasional) </span>
+      <input type="number" class="form-control" id="NISN" placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3"/>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon3">NIK (Nomor Induk Keluarga) Siswa </span>
+      <input type="number" class="form-control" id="NISN" placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3"/>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Nama Lengkap <i>(Sesuai Ijazah)</i></span>
+          <input type="text" class="form-control" id="nama-siswa" name="namaSiswa" placeholder="Nama Lengkap Siswa" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group d-flex">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Laki-laki" id="Laki-laki"/>
+            <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Perempuan" id="Perempuan"/>
+            <label class="form-check-label" for="flexRadioDefault1">Perempuan</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Tempat Lahir <i>(Sesuai Ijazah)</i></span>
+          <input type="text" class="form-control" id="tempat-lahir" placeholder="Tempat Lahir" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Tanggal Lahir <i>(Sesuai Ijazah)</i></span>
+          <input type="date" class="form-control" id="tanggal-lahir" placeholder="Tanggal Lahir" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon3">Sekolah Asal</span>
+      <input type="text" class="form-control" id="sekolah-asal" placeholder="Sekolah Asal" aria-describedby="basic-addon3"/>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Anak ke</span>
+          <input type="number" class="form-control" id="anak-ke" placeholder="Anak ke" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-9 d-flex">
+        <label>Status dalam keluarga :</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="anak-kandung" id="anak-kandung"/>
+          <label class="form-check-label" for="flexRadioDefault1">Anak Kandung</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="anak-tiri" id="anak-tiri"/>
+          <label class="form-check-label" for="flexRadioDefault1">Anak Tiri</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="anak-angkat" id="anak-angkat"/>
+          <label class="form-check-label" for="flexRadioDefault1">Anak Angkat</label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Jumlah Saudara</span>
+          <input type="number" class="form-control" id="jumlah-saudara" placeholder="Jumlah Saudara" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Jumlah Adik</span>
+          <input type="number" class="form-control" id="jumlah-adik" placeholder="Jumlah Adik" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Jumlah Kakak</span>
+          <input type="number" class="form-control" id="jumlah-kakak" placeholder="Jumlah Kakak" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <h5>Alamat Tempat Tinggal Siswa :</h5>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Provinsi</label>
+          <select class="form-select" id="provinsi">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Kabupaten/Kota</label>
+          <select class="form-select" id="kabupaten/kota">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Kecamatan</label>
+          <select class="form-select" id="kecamatan">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Desa/Kelurahan</label>
+          <select class="form-select" id="desa-kelurahan">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Dusun/Lingkungan</span>
+          <input type="text" class="form-control" id="dusun-lingkungan" placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">RT</span>
+          <input type="number" class="form-control" id="rt" placeholder="RT" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">RW</span>
+          <input type="number" class="form-control" id="rW" placeholder="RW" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">No. Telp. / HP yang bisa dihubungi</span>
+          <input type="number" class="form-control" id="telp" placeholder="Nomor Telephone / Handphone" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+  <!-- DATA ORANG TUA -->
+  <h5><b>B. DATA ORANG TUA KANDUNG</b></h5>
+  <div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Nama Lengkap Ayah</span>
+          <input type="text" class="form-control" id="nama-ayah" placeholder="Nama Lengkap Ayah" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Nama Lengkap Ibu</span>
+          <input type="text" class="form-control" id="nama-ibu" placeholder="Nama Lengkap Ibu" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Pendidikan Terakhir Ayah</label>
+          <select class="form-select" id="pendidikan-ayah">
+            <option>SD/MI/Sederajat</option>
+            <option>SMP/MTS/Sederajat</option>
+            <option>SMA/MA/Sederajat</option>
+            <option>D1/Sederajat</option>
+            <option>D2/Sederajat</option>
+            <option>D3/Sederajat</option>
+            <option>S1</option>
+            <option>S2</option>
+            <option>S3</option>
+            <option>Tidak Bersekolah</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Pendidikan Terakhir Ibu</label>
+          <select class="form-select" id="pendidikan-ibu">
+            <option>SD/MI/Sederajat</option>
+            <option>SMP/MTS/Sederajat</option>
+            <option>SMA/MA/Sederajat</option>
+            <option>D1/Sederajat</option>
+            <option>D2/Sederajat</option>
+            <option>D3/Sederajat</option>
+            <option>S1</option>
+            <option>S2</option>
+            <option>S3</option>
+            <option>Tidak Bersekolah</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Pekerjahan Ayah</span>
+          <input type="text" class="form-control" id="pekerjaan-ayah" placeholder="Pekerjaan Ayah" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Pekerjaan Ibu</span>
+          <input type="text" class="form-control" id="pekerjaan-ibu" placeholder="Pekerjaan Ibu" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <h5>Alamat Tempat Tinggal Orangtua :</h5>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Provinsi</label>
+          <select class="form-select" id="provinsi">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Kabupaten/Kota</label>
+          <select class="form-select" id="kabupaten/kota">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Kecamatan</label>
+          <select class="form-select" id="kecamatan">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Desa/Kelurahan</label>
+          <select class="form-select" id="desa-kelurahan">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Dusun/Lingkungan</span>
+          <input type="text" class="form-control" id="dusun-lingkungan" placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">RT</span>
+          <input type="number" class="form-control" id="rt" placeholder="RT" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">RW</span>
+          <input type="number" class="form-control" id="rW" placeholder="RW" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Penghasilan Rata-rata Ayah</label>
+          <select class="form-select" id="penghasilan-ayah">
+            <option>Kurang dari Rp 1jt/bln</option>
+            <option>Antara Rp 1-2jt/bln</option>
+            <option>Lebih dari Rp 2jt/bln</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Penghasilan Rata-rata Ibu</label>
+          <select class="form-select" id="penghasilan-ibu">
+            <option>Kurang dari Rp 1jt/bln</option>
+            <option>Antara Rp 1-2jt/bln</option>
+            <option>Lebih dari Rp 2jt/bln</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+  <!-- DATA WALI -->
+  <h5><b>C. DATA WALI</b></h5>
+  <div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Nama Lengkap Wali</span>
+          <input type="text" class="form-control" id="nama-wali" placeholder="Nama Lengkap Wali" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group d-flex">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Laki-laki" id="Laki-laki"/>
+            <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Perempuan" id="Perempuan"/>
+            <label class="form-check-label" for="flexRadioDefault1">Perempuan</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Pendidikan Terakhir Wali</label>
+          <select class="form-select" id="pendidikan-wali">
+            <option>SD/MI/Sederajat</option>
+            <option>SMP/MTS/Sederajat</option>
+            <option>SMA/MA/Sederajat</option>
+            <option>D1/Sederajat</option>
+            <option>D2/Sederajat</option>
+            <option>D3/Sederajat</option>
+            <option>S1</option>
+            <option>S2</option>
+            <option>S3</option>
+            <option>Tidak Bersekolah</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Penghasilan Rata-rata Wali</label>
+          <select class="form-select" id="penghasilan-wali">
+            <option>Kurang dari Rp 1jt/bln</option>
+            <option>Antara Rp 1-2jt/bln</option>
+            <option>Lebih dari Rp 2jt/bln</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <h5>Alamat Tempat Tinggal Wali :</h5>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Provinsi</label>
+          <select class="form-select" id="provinsi">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Kabupaten/Kota</label>
+          <select class="form-select" id="kabupaten/kota">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Kecamatan</label>
+          <select class="form-select" id="kecamatan">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label>Desa/Kelurahan</label>
+          <select class="form-select" id="desa-kelurahan">
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Dusun/Lingkungan</span>
+          <input type="text" class="form-control" id="dusun-lingkungan" placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">RT</span>
+          <input type="number" class="form-control" id="rt" placeholder="RT" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">RW</span>
+          <input type="number" class="form-control" id="rW" placeholder="RW" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon3">Pekerjaan Wali</span>
+          <input type="text" class="form-control" id="pekerjaan-wali" placeholder="Pekerjaan Wali" aria-describedby="basic-addon3"/>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group d-flex">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tes-offline" id="tes-offline"/>
+            <label class="form-check-label" for="tes-offline"><b>Tes Masuk Offline<b></label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tes-online" id="tes-online"/>
+            <label class="form-check-label" for="tes-online"><b>Tes Masuk Online<b></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-12">
+      <button  class="btn btn-primary btn-lg col-md-12" ><h3>SIMPAN PENDAFTARAN</h3></button>
+    </div>
+  </div>
+</form>
+
+
+<!-- ============================= end FORMULIR ======================================================= -->
+          </div>
+        </div>
+        
+
+        <footer class="footer">
+          <div class="container-fluid d-flex justify-content-between">
+            <nav class="pull-left">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="http://www.themekita.com">
+                    ThemeKita
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Help </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Licenses </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copyright">
+              2024, made with <i class="fa fa-heart heart text-danger"></i> by
+              <a href="http://www.themekita.com">ThemeKita</a>
+            </div>
+            <div>
+              Distributed by
+              <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      
+    </div>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="assets/js/plugin/jsvectormap/world.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Kaiadmin JS -->
+    <script src="assets/js/kaiadmin.min.js"></script>
+
+    
+  </body>
+</html>
