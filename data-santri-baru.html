@@ -256,15 +256,13 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="card">
-                  <div class="card-header">
-                      <div class="col-md-4">
+                  <div class="row card-header">
+                      <div class="col-md-6">
                         <h4 class="card-title">DATA SANTRI BARU</h4>
                       </div>
                       <div class="col-md-6">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <label for="pilihLembaga">Pilih Lembaga</label>
-                          </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon3">Pilih Lembaga</span>
                           <div class="col-md-9">
                             <select class="form-select"id="pilihLembaga">
                               <option>MA Putra</option>
@@ -512,74 +510,80 @@
                       <div class="card card-stats card-round">
                         <div class="card-body">
                           <div>
-                            <div class="form-group">
-                              <label for="pilihLembaga">Pilih Lembaga</label>
-                              <select
-                                class="form-select form-control-lg"
-                                id="pilihLembaga"
-                              >
-                                <option>MA AL-AZIZIYAH PUTRA</option>
-                                <option>MA AL-AZIZIYAH PUTRI</option>
-                              </select>
-                            </div>
-                            <div class="row">
+                            <div class="row card-header">
+                              
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label for="pilihLembaga">Pilihan Asrama Pertama</label>
-                                  <select
-                                    class="form-select form-control-lg"
-                                    id="pilihLembaga"
-                                  >
-                                    <option>ASRAMA UTAMA PUTRA</option>
-                                    <option>ASRAMA UTAMA PUTRI</option>
-                                  </select>
+                                <div class="input-group col-md-12 ">
+                                  <span class="input-group-text col-md-6" id="basic-addon3">Pilih Lembaga</span>
+                                  <div class="col-md-6">
+                                    <select class="form-select"id="pilihLembaga">
+                                      <option>MA Putra</option>
+                                      <option>MA Putri</option>
+                                      <option>MTs Putra</option>
+                                      <option>MTs Putri</option>
+                                      <option>MQWH Putra & Putri</option>
+                                    </select>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="row">
+                            <div class="row card-body">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label for="pilihLembaga">Pilihan Asrama Kedua</label>
-                                  <select
-                                    class="form-select form-control-lg"
-                                    id="pilihLembaga"
-                                  >
-                                    <option>ASRAMA UTAMA PUTRA</option>
-                                    <option>ASRAMA UTAMA PUTRI</option>
-                                  </select>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text col-md-3" id="basic-addon3">Pilihan 1</span>
+                                  <div class="col-md-9">
+                                    <select class="form-select" id="asrama1" >
+                                      <option>ASRAMA UTAMA PUTRA</option>
+                                      <option>ASRAMA UTAMA PUTRI</option>
+                                    </select>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label for="pilihLembaga">Pilihan Asrama Ketiga</label>
-                                  <select
-                                    class="form-select form-control-lg"
-                                    id="pilihLembaga"
-                                  >
-                                    <option>ASRAMA UTAMA PUTRA</option>
-                                    <option>ASRAMA UTAMA PUTRI</option>
-                                  </select>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text col-md-3" id="basic-addon3">Pilihan 2</span>
+                                  <div class="col-md-9">
+                                    <select class="form-select" id="asrama2" >
+                                      <option>ASRAMA UTAMA PUTRA</option>
+                                      <option>ASRAMA UTAMA PUTRI</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text col-md-3" id="basic-addon3">Pilihan 3</span>
+                                  <div class="col-md-9">
+                                    <select class="form-select" id="asrama3" >
+                                      <option>ASRAMA UTAMA PUTRA</option>
+                                      <option>ASRAMA UTAMA PUTRI</option>
+                                    </select>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    
+
                       <!-- DATA SANTRI -->
-                       <div class="card card-stats card-round">
+                      <div class="card card-stats card-round">
                         <div class="card-body">
                           <h5><b>A. DATA CALON PESERTA DIDIK</b></h5>
                           <div>
-                            <div class="input-group mb-3">
-                              <span class="input-group-text" id="basic-addon3">NISN (Nomor Induk Siswa Nasional) </span>
-                              <input type="number" class="form-control" id="NISN" placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3"/>
-                            </div>
-                            <div class="input-group mb-3">
-                              <span class="input-group-text" id="basic-addon3">NIK (Nomor Induk Keluarga) Siswa </span>
-                              <input type="number" class="form-control" id="NISN" placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3"/>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon3">NISN (Nomor Induk Siswa Nasional) </span>
+                                  <input type="number" class="form-control" id="NISN" placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3"/>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon3">NIK (Nomor Induk Keluarga) Siswa </span>
+                                  <input type="number" class="form-control" id="NISN" placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3"/>
+                                </div>
+                              </div>
                             </div>
                             <div class="row">
                               <div class="col-md-12">
@@ -589,7 +593,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group d-flex">
+                                <div class="input-group d-flex">
+                                  <span class="input-group-text mb-3">Gender</span>
                                   <div class="form-check">
                                     <input class="form-check-input" type="radio" name="Laki-laki" id="Laki-laki"/>
                                     <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
@@ -615,7 +620,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="input-group mb-12">
+                            <div class="input-group mb-3">
                               <span class="input-group-text" id="basic-addon3">Sekolah Asal</span>
                               <input type="text" class="form-control" id="sekolah-asal" placeholder="Sekolah Asal" aria-describedby="basic-addon3"/>
                             </div>
@@ -627,18 +632,20 @@
                                 </div>
                               </div>
                               <div class="col-md-12 d-flex">
-                                <label>Status dalam keluarga :</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="anak-kandung" id="anak-kandung"/>
-                                  <label class="form-check-label" for="flexRadioDefault1">Anak Kandung</label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="anak-tiri" id="anak-tiri"/>
-                                  <label class="form-check-label" for="flexRadioDefault1">Anak Tiri</label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="anak-angkat" id="anak-angkat"/>
-                                  <label class="form-check-label" for="flexRadioDefault1">Anak Angkat</label>
+                                <span class="input-group-text mb-3">Status dalam keluarga</span>
+                                  <div class="input-group">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="anak-kandung" id="anak-kandung"/>
+                                      <label class="form-check-label" for="flexRadioDefault1">Anak Kandung</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="anak-tiri" id="anak-tiri"/>
+                                      <label class="form-check-label" for="flexRadioDefault1">Anak Tiri</label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="anak-angkat" id="anak-angkat"/>
+                                      <label class="form-check-label" for="flexRadioDefault1">Anak Angkat</label>
+                                    </div>
                                 </div>
                               </div>
                             </div>
@@ -665,8 +672,8 @@
                             <h5>Alamat Tempat Tinggal Siswa :</h5>
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Provinsi</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Provinsi</span>
                                   <select class="form-select" id="provinsi">
                                     <option>1</option>
                                     <option>2</option>
@@ -674,17 +681,19 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Kabupaten/Kota</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Kabupaten/Kota</span>
                                   <select class="form-select" id="kabupaten/kota">
                                     <option>1</option>
                                     <option>2</option>
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                            <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Kecamatan</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Kecamatan</span>
                                   <select class="form-select" id="kecamatan">
                                     <option>1</option>
                                     <option>2</option>
@@ -692,8 +701,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Desa/Kelurahan</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Desa/Kelurahan</span>
                                   <select class="form-select" id="desa-kelurahan">
                                     <option>1</option>
                                     <option>2</option>
@@ -731,10 +740,10 @@
                             </div>
                           </div>
                         </div>
-                       </div>
-                    
+                      </div>
+
                       <!-- DATA ORANG TUA -->
-                       <div class="card card-stats card-round">
+                      <div class="card card-stats card-round">
                         <div class="card-body">
                           <h5><b>B. DATA ORANG TUA KANDUNG</b></h5>
                           <div>
@@ -754,8 +763,8 @@
                             </div>
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Pendidikan Terakhir Ayah</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Pendidikan Terakhir Ayah</span>
                                   <select class="form-select" id="pendidikan-ayah">
                                     <option>SD/MI/Sederajat</option>
                                     <option>SMP/MTS/Sederajat</option>
@@ -771,8 +780,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Pendidikan Terakhir Ibu</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Pendidikan Terakhir Ibu</span>
                                   <select class="form-select" id="pendidikan-ibu">
                                     <option>SD/MI/Sederajat</option>
                                     <option>SMP/MTS/Sederajat</option>
@@ -805,8 +814,8 @@
                             <h5>Alamat Tempat Tinggal Orangtua :</h5>
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Provinsi</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Provinsi</span>
                                   <select class="form-select" id="provinsi">
                                     <option>1</option>
                                     <option>2</option>
@@ -814,17 +823,19 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Kabupaten/Kota</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Kabupaten/Kota</span>
                                   <select class="form-select" id="kabupaten/kota">
                                     <option>1</option>
                                     <option>2</option>
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                            <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Kecamatan</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Kecamatan</span>
                                   <select class="form-select" id="kecamatan">
                                     <option>1</option>
                                     <option>2</option>
@@ -832,8 +843,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Desa/Kelurahan</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Desa/Kelurahan</span>
                                   <select class="form-select" id="desa-kelurahan">
                                     <option>1</option>
                                     <option>2</option>
@@ -863,8 +874,8 @@
                             </div>
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Penghasilan Rata-rata Ayah</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Penghasilan Rata-rata Ayah</span>
                                   <select class="form-select" id="penghasilan-ayah">
                                     <option>Kurang dari Rp 1jt/bln</option>
                                     <option>Antara Rp 1-2jt/bln</option>
@@ -873,8 +884,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Penghasilan Rata-rata Ibu</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Penghasilan Rata-rata Ibu</span>
                                   <select class="form-select" id="penghasilan-ibu">
                                     <option>Kurang dari Rp 1jt/bln</option>
                                     <option>Antara Rp 1-2jt/bln</option>
@@ -885,10 +896,10 @@
                             </div>
                           </div>
                         </div>
-                       </div>
-                    
+                      </div>
+
                       <!-- DATA WALI -->
-                       <div class="card card-stats card-round">
+                      <div class="card card-stats card-round">
                         <div class="card-body">
                           <h5><b>C. DATA WALI</b></h5>
                           <div>
@@ -900,7 +911,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group d-flex">
+                                <div class="input-group d-flex">
+                                  <span class="input-group-text mb-3">Gender</span>
                                   <div class="form-check">
                                     <input class="form-check-input" type="radio" name="Laki-laki" id="Laki-laki"/>
                                     <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
@@ -924,8 +936,8 @@
                             </div>
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Pendidikan Terakhir Wali</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Pendidikan Terakhir Wali</span>
                                   <select class="form-select" id="pendidikan-wali">
                                     <option>SD/MI/Sederajat</option>
                                     <option>SMP/MTS/Sederajat</option>
@@ -941,8 +953,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Penghasilan Rata-rata Wali</label>
+                                <div class="input-group">
+                                  <span class="input-group-text">Penghasilan Rata-rata Wali</span>
                                   <select class="form-select" id="penghasilan-wali">
                                     <option>Kurang dari Rp 1jt/bln</option>
                                     <option>Antara Rp 1-2jt/bln</option>
@@ -954,8 +966,8 @@
                             <h5>Alamat Tempat Tinggal Wali :</h5>
                             <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Provinsi</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Provinsi</span>
                                   <select class="form-select" id="provinsi">
                                     <option>1</option>
                                     <option>2</option>
@@ -963,17 +975,19 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Kabupaten/Kota</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Kabupaten/Kota</span>
                                   <select class="form-select" id="kabupaten/kota">
                                     <option>1</option>
                                     <option>2</option>
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                            <div class="row">
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Kecamatan</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Kecamatan</span>
                                   <select class="form-select" id="kecamatan">
                                     <option>1</option>
                                     <option>2</option>
@@ -981,8 +995,8 @@
                                 </div>
                               </div>
                               <div class="col-md-12">
-                                <div class="form-group">
-                                  <label>Desa/Kelurahan</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text">Desa/Kelurahan</span>
                                   <select class="form-select" id="desa-kelurahan">
                                     <option>1</option>
                                     <option>2</option>
@@ -1013,20 +1027,43 @@
                           </div>
                         </div>
                       </div>
+                      <!-- Jenis Tes Masuk -->
                       <div class="card">
-                        <div class="card-body">
-                          <div class="form-group d-flex">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="tes-offline" id="tes-offline"/>
-                              <label class="form-check-label" for="tes-offline"><b>Tes Masuk Offline<b></label>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <label class="form-label">Silahkan pilih jenis tes masuk yang akan dilakukan :</label>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="selectgroup w-100">
+                              <label class="selectgroup-item">
+                                <input
+                                  type="radio"
+                                  name="tesMasuk"
+                                  value="tesOffline"
+                                  class="selectgroup-input"
+                                  checked=""
+                                />
+                                <span class="selectgroup-button">Tes Masuk Offline</span>
+                              </label>
                             </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="tes-online" id="tes-online"/>
-                              <label class="form-check-label" for="tes-online"><b>Tes Masuk Online<b></label>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="selectgroup w-100">
+                              <label class="selectgroup-item">
+                                <input
+                                  type="radio"
+                                  name="tesMasuk"
+                                  value="tesOnline"
+                                  class="selectgroup-input"
+                                  checked=""
+                                />
+                                <span class="selectgroup-button">Tes Masuk Online</span>
+                              </label>
                             </div>
                           </div>
                         </div>
                       </div>
+                      
                       <div class="modal-footer">
                           <button  class="btn btn-primary" >SIMPAN</button>
                           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
