@@ -363,18 +363,6 @@
                                     Cetak
                                   </span>
                                 </button>
-                                <button class="btn btn-primary btn-xs">
-                                  <span class="btn-label">
-                                    <i class="fa fa-edit"></i>
-                                    Edit
-                                  </span>   
-                                </button>
-                                <button class="btn btn-danger btn-xs">
-                                  <span class="btn-label">
-                                    <i class="fa fa-trash"></i>
-                                    Hapus
-                                  </span>  
-                                </button>  
                                 <button class="btn btn-warning btn-xs"
                                 data-bs-toggle="modal"
                                 data-bs-target="#verifikasiDU">
@@ -401,18 +389,6 @@
                                         Cetak
                                       </span>
                                     </button>
-                                    <button class="btn btn-primary btn-xs">
-                                      <span class="btn-label">
-                                        <i class="fa fa-edit"></i>
-                                        Edit
-                                      </span>   
-                                    </button>
-                                    <button class="btn btn-danger btn-xs">
-                                      <span class="btn-label">
-                                        <i class="fa fa-trash"></i>
-                                        Hapus
-                                      </span>  
-                                    </button>  
                                     <button class="btn btn-warning btn-xs"
                                     data-bs-toggle="modal"
                                     data-bs-target="#verifikasiDU">
@@ -439,6 +415,7 @@
             tabindex="-1"
             role="dialog"
             aria-hidden="true"
+            data-bs-backdrop="static"
             >
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -523,6 +500,8 @@
               </div>
             </div>
             <!-- end Modal Verifikasi Daftar Ulang -->
+
+            
 <!-- =================================================================================================== -->
 
 
@@ -626,6 +605,31 @@
   });
 </script>
 <!-- end SCRIPT DATATABLES -->
+
+ <script>
+  $("#alert_verifikasi_du").click(function (e) {
+            swal({
+              title: "Alasan Ditolak",
+              html: '<br><input class="form-control" placeholder="Alasan Ditolak" id="input-field" >',
+              content: {
+                element: "input",
+                attributes: {
+                  placeholder: "Utarakan alasan menolak verivikasi",
+                  type: "text",
+                  id: "input-field",
+                  className: "form-control",
+                },
+              },
+              buttons: {
+                confirm: {
+                  className: "btn btn-success",
+                },
+              },
+            }).then(function () {
+              swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
+            });
+          });
+ </script>
 
 
   </body>
