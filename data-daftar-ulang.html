@@ -375,7 +375,9 @@
                                     Hapus
                                   </span>  
                                 </button>  
-                                <button class="btn btn-warning btn-xs">
+                                <button class="btn btn-warning btn-xs"
+                                data-bs-toggle="modal"
+                                data-bs-target="#verifikasiDU">
                                   <span class="btn-label">
                                     Daftar Ulang
                                   </span>  
@@ -411,7 +413,9 @@
                                         Hapus
                                       </span>  
                                     </button>  
-                                    <button class="btn btn-warning btn-xs">
+                                    <button class="btn btn-warning btn-xs"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#verifikasiDU">
                                       <span class="btn-label">
                                         Daftar Ulang
                                       </span>  
@@ -427,6 +431,98 @@
               </div>
             </div>
             <!-- end TABEL DAFTAR ULANG -->
+
+            <!-- Modal Verifikasi Daftar Ulang -->
+            <div
+            class="modal fade"
+            id="verifikasiDU"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title">
+                      <span class="fw-mediumbold">Verivikasi</span>
+                      <span class="fw-light">Bukti Pendaftaran </span>
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Jenis Pembayaran :</label>
+                            <span>Pembayaran DAFTAR ULANG</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nama :</label>
+                            <span>Jimmy Denis</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Lembaga :</label>
+                            <span>Madrasah Aliyah Putra</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nomor Pendaftaran :</label>
+                            <span>MA.Pa-232424.2025</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nomor HP :</label>
+                            <span>087865764543</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Photo Bukti Pendaftaran</label>
+                            <img src="assets/img/struk kwitansi.webp" width="450">
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer border-0">
+                    <button
+                      type="button"
+                      id="addRowButton"
+                      class="btn btn-primary"
+                    >
+                    <i class="fa fa-check"></i>
+                      Verivikasi
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                      id="alert_verifikasi_du"
+                    >
+                    <i class="fas fa-minus-circle"></i>
+                      Rejected
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Modal Verifikasi Daftar Ulang -->
 <!-- =================================================================================================== -->
 
 
