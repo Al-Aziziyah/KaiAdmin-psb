@@ -1,60 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
-    <meta
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-      name="viewport"
-    />
-    <link
-      rel="icon"
-      href="assets/img/kaiadmin/favicon.ico"
-      type="image/x-icon"
-    />
 
-    <!-- Fonts and icons -->
-    <script src="assets/js/plugin/webfont/webfont.min.js"></script>
-    <script>
-      WebFont.load({
-        google: { families: ["Public Sans:300,400,500,600,700"] },
-        custom: {
-          families: [
-            "Font Awesome 5 Solid",
-            "Font Awesome 5 Regular",
-            "Font Awesome 5 Brands",
-            "simple-line-icons",
-          ],
-          urls: ["assets/css/fonts.min.css"],
-        },
-        active: function () {
-          sessionStorage.fonts = true;
-        },
-      });
-    </script>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kaiadmin - Bootstrap 5 Admin Dashboard</title>
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+  <link rel="icon" href="assets/img/kaiadmin/favicon.ico" type="image/x-icon" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins.min.css" />
-    <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+  <!-- Fonts and icons -->
+  <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Public Sans:300,400,500,600,700"] },
+      custom: {
+        families: [
+          "Font Awesome 5 Solid",
+          "Font Awesome 5 Regular",
+          "Font Awesome 5 Brands",
+          "simple-line-icons",
+        ],
+        urls: ["assets/css/fonts.min.css"],
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      },
+    });
+  </script>
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="assets/css/demo.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar -->
-      <div class="sidebar" data-background-color="dark">
-        <div class="sidebar-logo">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/plugins.min.css" />
+  <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link rel="stylesheet" href="assets/css/demo.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar" data-background-color="dark">
+      <div class="sidebar-logo">
+        <!-- Logo Header -->
+        <div class="logo-header" data-background-color="dark">
+          <a href="index.html" class="logo">
+            <img src="assets/img/kaiadmin/logo_light.png" alt="navbar brand" class="navbar-brand" height="30" />
+          </a>
+          <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar">
+              <i class="gg-menu-right"></i>
+            </button>
+            <button class="btn btn-toggle sidenav-toggler">
+              <i class="gg-menu-left"></i>
+            </button>
+          </div>
+          <button class="topbar-toggler more">
+            <i class="gg-more-vertical-alt"></i>
+          </button>
+        </div>
+        <!-- End Logo Header -->
+      </div>
+      <div class="sidebar-wrapper scrollbar scrollbar-inner">
+        <div class="sidebar-content">
+          <ul class="nav nav-secondary">
+            <li class="nav-item active">
+              <a data-bs-toggle="collapse" href="#">
+                <i class="fas fa-home"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a data-bs-toggle="collapse" href="#base">
+                <i class="fas fa-database"></i>
+                <p>Data Master</p>
+                <span class="caret"></span>
+              </a>
+              <div class="collapse" id="base">
+                <ul class="nav nav-collapse">
+                  <li>
+                    <a href="">
+                      <i class="fas fa-university"></i>
+                      <span>Pondok</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chalkboard-teacher"></i>
+                      <span>Panitia</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-store-alt"></i>
+                      <span>Lembaga</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span>Tahun Ajaran</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-building"></i>
+                      <span>Asrama</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-users"></i>
+                      <span>Pengguna</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-pen"></i>
+                <p>Pendaftaran Santri</p>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a href="">
+                <i class="fas fa-address-book"></i>
+                <p>Data Santri Baru</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-id-card"></i>
+                <p>Data Daftar Ulang</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>Verifikasi Pembayaran</p>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+    <div class="main-panel">
+      <div class="main-header">
+        <div class="main-header-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
             <a href="index.html" class="logo">
-              <img
-                src="assets/img/kaiadmin/logo_light.png"
-                alt="navbar brand"
-                class="navbar-brand"
-                height="30"
-              />
+              <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
             </a>
             <div class="nav-toggle">
               <button class="btn btn-toggle toggle-sidebar">
@@ -70,697 +171,473 @@
           </div>
           <!-- End Logo Header -->
         </div>
-        <div class="sidebar-wrapper scrollbar scrollbar-inner">
-          <div class="sidebar-content">
-            <ul class="nav nav-secondary">
-              <li class="nav-item active">
-                <a data-bs-toggle="collapse" href="#" >
-                  <i class="fas fa-home"></i>
-                  <p>Dashboard</p>
+        <!-- Navbar Header -->
+        <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+          <div class="container-fluid">
+
+
+            <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
+              <li class="nav-item topbar-user dropdown hidden-caret">
+                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                  <div class="avatar-sm">
+                    <img src="assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+                  </div>
+                  <span class="profile-username">
+                    <span class="op-7">Hi,</span>
+                    <span class="fw-bold">Hizrian</span>
+                  </span>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#base">
-                  <i class="fas fa-database"></i>
-                  <p>Data Master</p>
-                  <span class="caret"></span>
-                </a>
-                <div class="collapse" id="base">
-                  <ul class="nav nav-collapse">
+                <ul class="dropdown-menu dropdown-user animated fadeIn">
+                  <div class="dropdown-user-scroll scrollbar-outer">
                     <li>
-                      <a href="">
-                        <i class="fas fa-university"></i>
-                        <span>Pondok</span>
-                      </a>
+                      <div class="user-box">
+                        <div class="avatar-lg">
+                          <img src="assets/img/profile.jpg" alt="image profile" class="avatar-img rounded" />
+                        </div>
+                        <div class="u-text">
+                          <h4>Hizrian</h4>
+
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        <span>Panitia</span>
-                      </a>
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item" href="#">Ubah Password</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Logout</a>
                     </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-store-alt"></i>
-                        <span>Lembaga</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span>Tahun Ajaran</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-building"></i>
-                        <span>Asrama</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fas fa-users"></i>
-                        <span>Pengguna</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                  </div>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a href="#">
-                  <i class="fas fa-pen"></i>
-                  <p>Pendaftaran Santri</p>
-                </a>
-                
-              </li>
-              <li class="nav-item">
-                <a href="">
-                  <i class="fas fa-address-book"></i>
-                  <p>Data Santri Baru</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a  href="#">
-                  <i class="fas fa-id-card"></i>
-                  <p>Data Daftar Ulang</p>
-                </a> 
-              </li>
-              <li class="nav-item">
-                <a  href="#">
-                  <i class="fas fa-money-bill-wave"></i>
-                  <p>Verifikasi Pembayaran</p>
-                </a> 
-              </li>
-              
-              
             </ul>
+
           </div>
+        </nav>
+        <!-- End Navbar -->
+      </div>
+
+      <div class="container">
+        <div class="page-inner">
+
+
+
+          <!-- =================================================================================================== -->
+          <!-- VERIFIKASI PEMBAYARAN ONLINE -->
+          <div class="row">
+            <!-- Verifikasi Pembayaran PSB -->
+            <div class="col-md-4">
+              <div class="card card-round">
+                <div class="card-body">
+                  <div class="card-head-row card-tools-still-right">
+                    <div class="card-title">Verifikasi Pendaftar Baru</div>
+                  </div>
+                  <div class="card-list py-4">
+                    <div class="item-list">
+                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
+                        <i class="fa fa-check"></i>
+                      </button>
+                      <div class="info-user ms-3">
+                        <div class="username">Jimmy Denis</div>
+                        <div class="status">MA Putra</div>
+                      </div>
+
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                        <span class="btn-label">
+                          <i class="fa fa-check"></i>
+                        </span>
+                        Verivikasi
+                      </button>
+                    </div>
+                    <div class="item-list">
+                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
+                        <i class="fa fa-check"></i>
+                      </button>
+                      <div class="info-user ms-3">
+                        <div class="username">Chandra Felix</div>
+                        <div class="status">MTs. Putra</div>
+                      </div>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                        <span class="btn-label">
+                          <i class="fa fa-check"></i>
+                        </span>
+                        Verivikasi
+                      </button>
+                    </div>
+                    <div class="item-list">
+                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
+                        <i class="fa fa-check"></i>
+                      </button>
+                      <div class="info-user ms-3">
+                        <div class="username">Talha</div>
+                        <div class="status">MQWH Putra</div>
+                      </div>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                        <span class="btn-label">
+                          <i class="fa fa-check"></i>
+                        </span>
+                        Verivikasi
+                      </button>
+                    </div>
+                    <div class="item-list">
+                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
+                        <i class="fa fa-check"></i>
+                      </button>
+                      <div class="info-user ms-3">
+                        <div class="username">Baby Shila</div>
+                        <div class="status">MA Putri</div>
+                      </div>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                        <span class="btn-label">
+                          <i class="fa fa-check"></i>
+                        </span>
+                        Verivikasi
+                      </button>
+                    </div>
+                    <div class="item-list">
+                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
+                        <i class="fa fa-check"></i>
+                      </button>
+                      <div class="info-user ms-3">
+                        <div class="username">Amanda</div>
+                        <div class="status">MTs. Putri</div>
+                      </div>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                        <span class="btn-label">
+                          <i class="fa fa-check"></i>
+                        </span>
+                        Verivikasi
+                      </button>
+                    </div>
+                    <div class="item-list">
+                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
+                        <i class="fa fa-check"></i>
+                      </button>
+                      <div class="info-user ms-3">
+                        <div class="username">Farrah</div>
+                        <div class="status">MQWH Putri</div>
+                      </div>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                        <span class="btn-label">
+                          <i class="fa fa-check"></i>
+                        </span>
+                        Verivikasi
+                      </button>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+            <!-- end Verifikasi Pembayaran PSB -->
+
+            <!-- Verifikasi Pembayaran Daftar Ulang -->
+            <div class="col-md-8">
+              <div class="card card-round">
+                <div class="card-header">
+                  <div class="card-head-row card-tools-still-right">
+                    <div class="card-title">Verifikasi Daftar Ulang</div>
+
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <!-- Projects table -->
+                    <table class="table align-items-center mb-0">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col">Telah diterima dari</th>
+                          <th scope="col" class="text-end">Tanggal & Waktu</th>
+                          <th scope="col" class="text-end">Jumlah</th>
+                          <th scope="col" class="text-end">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <button class="btn btn-icon btn-round btn-success btn-sm me-2">
+                              <i class="fa fa-check"></i>
+                            </button>
+                            MA.Pa-265267.76
+                          </th>
+                          <td class="text-end">Mar 19, 2020, 2.45pm</td>
+                          <td class="text-end">Rp 250.000,-</td>
+                          <td class="text-end">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#verifikasiDU">
+                              <span class="btn-label">
+                                <i class="fa fa-check"></i>
+                              </span>
+                              Verivikasi
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Verifikasi Pembayaran Daftar Ulang -->
+
+            <!-- Modal Verifikasi PSB -->
+            <div class="modal fade" id="verifikasi" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title">
+                      <span class="fw-mediumbold">Verivikasi</span>
+                      <span class="fw-light">Bukti Pendaftaran </span>
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Jenis Pembayaran :</label>
+                            <span>Pembayaran PSB</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nama :</label>
+                            <span>Jimmy Denis</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Lembaga :</label>
+                            <span>Madrasah Aliyah Putra</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nomor Pendaftaran :</label>
+                            <span>MA.Pa-232424.2025</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nomor HP :</label>
+                            <span>087865764543</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Photo Bukti Pendaftaran</label>
+                            <img src="assets/img/struk kwitansi.webp" width="450">
+                          </div>
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer border-0">
+                    <button type="button" id="addRowButton" class="btn btn-primary">
+                      <i class="fa fa-check"></i>
+                      Verivikasi
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="alert_verifikasi_psb">
+                      <i class="fas fa-minus-circle"></i>
+                      Rejected
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Modal Verifikasi PSB -->
+
+            <!-- Modal Verifikasi Daftar Ulang -->
+            <div class="modal fade" id="verifikasiDU" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h5 class="modal-title">
+                      <span class="fw-mediumbold">Verivikasi</span>
+                      <span class="fw-light">Bukti Pendaftaran </span>
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+
+                    <form>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Jenis Pembayaran :</label>
+                            <span>Pembayaran DAFTAR ULANG</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nama :</label>
+                            <span>Jimmy Denis</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Lembaga :</label>
+                            <span>Madrasah Aliyah Putra</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nomor Pendaftaran :</label>
+                            <span>MA.Pa-232424.2025</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Nomor HP :</label>
+                            <span>087865764543</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group form-group-default">
+                            <label>Photo Bukti Pendaftaran</label>
+                            <img src="assets/img/struk kwitansi.webp" width="450">
+                          </div>
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer border-0">
+                    <button type="button" id="addRowButton" class="btn btn-primary">
+                      <i class="fa fa-check"></i>
+                      Verivikasi
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="alert_verifikasi_du">
+                      <i class="fas fa-minus-circle"></i>
+                      Rejected
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end Modal Verifikasi Daftar Ulang -->
+          </div>
+          <!-- end VERIFIKASI PEMBAYARAN ONLINE -->
+          <!-- =================================================================================================== -->
+
         </div>
       </div>
-      <!-- End Sidebar -->
-
-      <div class="main-panel">
-        <div class="main-header">
-          <div class="main-header-logo">
-            <!-- Logo Header -->
-            <div class="logo-header" data-background-color="dark">
-              <a href="index.html" class="logo">
-                <img
-                  src="assets/img/kaiadmin/logo_light.svg"
-                  alt="navbar brand"
-                  class="navbar-brand"
-                  height="20"
-                />
-              </a>
-              <div class="nav-toggle">
-                <button class="btn btn-toggle toggle-sidebar">
-                  <i class="gg-menu-right"></i>
-                </button>
-                <button class="btn btn-toggle sidenav-toggler">
-                  <i class="gg-menu-left"></i>
-                </button>
-              </div>
-              <button class="topbar-toggler more">
-                <i class="gg-more-vertical-alt"></i>
-              </button>
-            </div>
-            <!-- End Logo Header -->
-          </div>
-          <!-- Navbar Header -->
-          <nav
-            class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
-          >
-            <div class="container-fluid">
-              
-
-              <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
-                <li class="nav-item topbar-user dropdown hidden-caret">
-                  <a
-                    class="dropdown-toggle profile-pic"
-                    data-bs-toggle="dropdown"
-                    href="#"
-                    aria-expanded="false"
-                  >
-                    <div class="avatar-sm">
-                      <img
-                        src="assets/img/profile.jpg"
-                        alt="..."
-                        class="avatar-img rounded-circle"
-                      />
-                    </div>
-                    <span class="profile-username">
-                      <span class="op-7">Hi,</span>
-                      <span class="fw-bold">Hizrian</span>
-                    </span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-user animated fadeIn">
-                    <div class="dropdown-user-scroll scrollbar-outer">
-                      <li>
-                        <div class="user-box">
-                          <div class="avatar-lg">
-                            <img
-                              src="assets/img/profile.jpg"
-                              alt="image profile"
-                              class="avatar-img rounded"
-                            />
-                          </div>
-                          <div class="u-text">
-                            <h4>Hizrian</h4>
-                            
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="dropdown-divider"></div>
-                        
-                        <a class="dropdown-item" href="#">Ubah Password</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
-                      </li>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-
-            </div>
-          </nav>
-          <!-- End Navbar -->
-        </div>
-
-        <div class="container">
-          <div class="page-inner">
-
-
-
-<!-- =================================================================================================== -->
-            <!-- VERIFIKASI PEMBAYARAN ONLINE -->
-            <div class="row">
-              <!-- Verifikasi Pembayaran PSB -->
-              <div class="col-md-4">
-                <div class="card card-round">
-                  <div class="card-body">
-                    <div class="card-head-row card-tools-still-right">
-                      <div class="card-title">Verifikasi Pendaftar Baru</div>
-                    </div>
-                    <div class="card-list py-4">
-                      <div class="item-list">
-                        <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                          <i class="fa fa-check"></i>
-                        </button>
-                        <div class="info-user ms-3">
-                          <div class="username">Jimmy Denis</div>
-                          <div class="status">MA Putra</div>
-                        </div>
-                        
-                        <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#verifikasi"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-check"></i>
-                          </span>
-                          Verivikasi
-                        </button>
-                      </div>
-                      <div class="item-list">
-                        <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                          <i class="fa fa-check"></i>
-                        </button>
-                        <div class="info-user ms-3">
-                          <div class="username">Chandra Felix</div>
-                          <div class="status">MTs. Putra</div>
-                        </div>
-                        <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#verifikasi"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-check"></i>
-                          </span>
-                          Verivikasi
-                        </button>
-                      </div>
-                      <div class="item-list">
-                        <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                          <i class="fa fa-check"></i>
-                        </button>
-                        <div class="info-user ms-3">
-                          <div class="username">Talha</div>
-                          <div class="status">MQWH Putra</div>
-                        </div>
-                        <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#verifikasi"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-check"></i>
-                          </span>
-                          Verivikasi
-                        </button>
-                      </div>
-                      <div class="item-list">
-                        <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                          <i class="fa fa-check"></i>
-                        </button>
-                        <div class="info-user ms-3">
-                          <div class="username">Baby Shila</div>
-                          <div class="status">MA Putri</div>
-                        </div>
-                        <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#verifikasi"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-check"></i>
-                          </span>
-                          Verivikasi
-                        </button>
-                      </div>
-                      <div class="item-list">
-                        <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                          <i class="fa fa-check"></i>
-                        </button>
-                        <div class="info-user ms-3">
-                          <div class="username">Amanda</div>
-                          <div class="status">MTs. Putri</div>
-                        </div>
-                        <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#verifikasi"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-check"></i>
-                          </span>
-                          Verivikasi
-                        </button>
-                      </div>
-                      <div class="item-list">
-                        <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                          <i class="fa fa-check"></i>
-                        </button>
-                        <div class="info-user ms-3">
-                          <div class="username">Farrah</div>
-                          <div class="status">MQWH Putri</div>
-                        </div>
-                        <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#verifikasi"
-                        >
-                          <span class="btn-label">
-                            <i class="fa fa-check"></i>
-                          </span>
-                          Verivikasi
-                        </button>
-                      </div>
-                    </div>
-
-                    
-
-                  </div>
-                </div>
-              </div>
-              <!-- end Verifikasi Pembayaran PSB -->
-
-              <!-- Verifikasi Pembayaran Daftar Ulang -->
-              <div class="col-md-8">
-                <div class="card card-round">
-                  <div class="card-header">
-                    <div class="card-head-row card-tools-still-right">
-                      <div class="card-title">Verifikasi Daftar Ulang</div>
-                      
-                    </div>
-                  </div>
-                  <div class="card-body p-0">
-                    <div class="table-responsive">
-                      <!-- Projects table -->
-                      <table class="table align-items-center mb-0">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col">Telah diterima dari</th>
-                            <th scope="col" class="text-end">Tanggal & Waktu</th>
-                            <th scope="col" class="text-end">Jumlah</th>
-                            <th scope="col" class="text-end">Action</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">
-                              <button
-                                class="btn btn-icon btn-round btn-success btn-sm me-2"
-                              >
-                                <i class="fa fa-check"></i>
-                              </button>
-                              MA.Pa-265267.76
-                            </th>
-                            <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                            <td class="text-end">Rp 250.000,-</td>
-                            <td class="text-end">
-                              <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <button
-                                      class="btn btn-icon btn-round btn-success btn-sm me-2"
-                                    >
-                                      <i class="fa fa-check"></i>
-                                    </button>
-                                    MA.Pa-265267.76
-                                  </th>
-                                  <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                  <td class="text-end">Rp 250.000,-</td>
-                                  <td class="text-end">
-                                    <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <button
-                                      class="btn btn-icon btn-round btn-success btn-sm me-2"
-                                    >
-                                      <i class="fa fa-check"></i>
-                                    </button>
-                                    MA.Pa-265267.76
-                                  </th>
-                                  <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                  <td class="text-end">Rp 250.000,-</td>
-                                  <td class="text-end">
-                                    <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <button
-                                      class="btn btn-icon btn-round btn-success btn-sm me-2"
-                                    >
-                                      <i class="fa fa-check"></i>
-                                    </button>
-                                    MA.Pa-265267.76
-                                  </th>
-                                  <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                  <td class="text-end">Rp 250.000,-</td>
-                                  <td class="text-end">
-                                    <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <button
-                                      class="btn btn-icon btn-round btn-success btn-sm me-2"
-                                    >
-                                      <i class="fa fa-check"></i>
-                                    </button>
-                                    MA.Pa-265267.76
-                                  </th>
-                                  <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                  <td class="text-end">Rp 250.000,-</td>
-                                  <td class="text-end">
-                                    <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <button
-                                      class="btn btn-icon btn-round btn-success btn-sm me-2"
-                                    >
-                                      <i class="fa fa-check"></i>
-                                    </button>
-                                    MA.Pa-265267.76
-                                  </th>
-                                  <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                  <td class="text-end">Rp 250.000,-</td>
-                                  <td class="text-end">
-                                    <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">
-                                    <button
-                                      class="btn btn-icon btn-round btn-success btn-sm me-2"
-                                    >
-                                      <i class="fa fa-check"></i>
-                                    </button>
-                                    MA.Pa-265267.76
-                                  </th>
-                                  <td class="text-end">Mar 19, 2020, 2.45pm</td>
-                                  <td class="text-end">Rp 250.000,-</td>
-                                  <td class="text-end">
-                                    <button class="btn btn-success"
-                              data-bs-toggle="modal"
-                              data-bs-target="#verifikasiDU"
-                              >
-                                <span class="btn-label">
-                                  <i class="fa fa-check"></i>
-                                </span>
-                                Verivikasi
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end Verifikasi Pembayaran Daftar Ulang -->
-
-              <!-- Modal Verifikasi PSB -->
-              <div
-              class="modal fade"
-              id="verifikasi"
-              tabindex="-1"
-              role="dialog"
-              aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header border-0">
-                      <h5 class="modal-title">
-                        <span class="fw-mediumbold">Verivikasi</span>
-                        <span class="fw-light">Bukti Pendaftaran </span>
-                      </h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      
-                      <form>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Jenis Pembayaran :</label>
-                              <span>Pembayaran PSB</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Nama :</label>
-                              <span>Jimmy Denis</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Lembaga :</label>
-                              <span>Madrasah Aliyah Putra</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Nomor Pendaftaran :</label>
-                              <span>MA.Pa-232424.2025</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Nomor HP :</label>
-                              <span>087865764543</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Photo Bukti Pendaftaran</label>
-                              <img src="assets/img/struk kwitansi.webp" width="450">
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer border-0">
-                      <button
-                        type="button"
-                        id="addRowButton"
-                        class="btn btn-primary"
-                      >
-                      <i class="fa fa-check"></i>
-                        Verivikasi
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-danger"
-                        data-bs-dismiss="modal"
-                        id="alert_verifikasi_psb"
-                      >
-                      <i class="fas fa-minus-circle"></i>
-                        Rejected
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end Modal Verifikasi PSB -->
-
-              <!-- Modal Verifikasi Daftar Ulang -->
-              <div
-              class="modal fade"
-              id="verifikasiDU"
-              tabindex="-1"
-              role="dialog"
-              aria-hidden="true"
-              >
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header border-0">
-                      <h5 class="modal-title">
-                        <span class="fw-mediumbold">Verivikasi</span>
-                        <span class="fw-light">Bukti Pendaftaran </span>
-                      </h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      
-                      <form>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Jenis Pembayaran :</label>
-                              <span>Pembayaran DAFTAR ULANG</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Nama :</label>
-                              <span>Jimmy Denis</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Lembaga :</label>
-                              <span>Madrasah Aliyah Putra</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Nomor Pendaftaran :</label>
-                              <span>MA.Pa-232424.2025</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Nomor HP :</label>
-                              <span>087865764543</span>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="form-group form-group-default">
-                              <label>Photo Bukti Pendaftaran</label>
-                              <img src="assets/img/struk kwitansi.webp" width="450">
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer border-0">
-                      <button
-                        type="button"
-                        id="addRowButton"
-                        class="btn btn-primary"
-                      >
-                      <i class="fa fa-check"></i>
-                        Verivikasi
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-danger"
-                        data-bs-dismiss="modal"
-                        id="alert_verifikasi_du"
-                      >
-                      <i class="fas fa-minus-circle"></i>
-                        Rejected
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end Modal Verifikasi Daftar Ulang -->
-            </div>
-            <!-- end VERIFIKASI PEMBAYARAN ONLINE -->
-<!-- =================================================================================================== -->
-
-          </div>
-        </div>
     </div>
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery-3.7.1.min.js"></script>
@@ -796,60 +673,61 @@
     <script src="assets/js/kaiadmin.min.js"></script>
 
     <!-- -->
-    
-<!-- =================================================================================================== -->
-   
-<!-- =================================================================================================== -->
+
+    <!-- =================================================================================================== -->
+
+    <!-- =================================================================================================== -->
     <!-- SCRIPT ALERT VERIFIKASI -->
     <script>
       $("#alert_verifikasi_psb").click(function (e) {
-            swal({
-              title: "Alasan Ditolak",
-              html: '<br><input class="form-control" placeholder="Alasan Ditolak" id="input-field" >',
-              content: {
-                element: "input",
-                attributes: {
-                  placeholder: "Utarakan alasan menolak verivikasi",
-                  type: "text",
-                  id: "input-field",
-                  className: "form-control",
-                },
-              },
-              buttons: {
-                confirm: {
-                  className: "btn btn-success",
-                },
-              },
-            }).then(function () {
-              swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
-            });
-          });
+        swal({
+          title: "Alasan Ditolak",
+          html: '<br><input class="form-control" placeholder="Alasan Ditolak" id="input-field" >',
+          content: {
+            element: "input",
+            attributes: {
+              placeholder: "Utarakan alasan menolak verivikasi",
+              type: "text",
+              id: "input-field",
+              className: "form-control",
+            },
+          },
+          buttons: {
+            confirm: {
+              className: "btn btn-success",
+            },
+          },
+        }).then(function () {
+          swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
+        });
+      });
       $("#alert_verifikasi_du").click(function (e) {
-            swal({
-              title: "Alasan Ditolak",
-              html: '<br><input class="form-control" placeholder="Alasan Ditolak" id="input-field" >',
-              content: {
-                element: "input",
-                attributes: {
-                  placeholder: "Utarakan alasan menolak verivikasi",
-                  type: "text",
-                  id: "input-field",
-                  className: "form-control",
-                },
-              },
-              buttons: {
-                confirm: {
-                  className: "btn btn-success",
-                },
-              },
-            }).then(function () {
-              swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
-            });
-          });
+        swal({
+          title: "Alasan Ditolak",
+          html: '<br><input class="form-control" placeholder="Alasan Ditolak" id="input-field" >',
+          content: {
+            element: "input",
+            attributes: {
+              placeholder: "Utarakan alasan menolak verivikasi",
+              type: "text",
+              id: "input-field",
+              className: "form-control",
+            },
+          },
+          buttons: {
+            confirm: {
+              className: "btn btn-success",
+            },
+          },
+        }).then(function () {
+          swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
+        });
+      });
     </script>
     <!-- end SCRIPT ALERT VERIFIKASI -->
-<!-- =================================================================================================== -->
+    <!-- =================================================================================================== -->
 
 
-  </body>
+</body>
+
 </html>
