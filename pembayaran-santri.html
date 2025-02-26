@@ -225,55 +225,60 @@
           <div class="row">
             <div class="col-md-12">
               <div class="card">
-                <div class="card-header">
-                  <div class="card-title">Data Pembayaran Siswa</div>
+                <div class="card-header row">
+                  <div class="col-md-9">
+                    <h4 class="card-title">DATA PEMBAYARAN SANTRI</h4>
+                  </div>
+                  <div class="col-md-3">
+                    <button class="btn btn-info col-md-12" data-bs-toggle="modal"
+                      data-bs-target="#uploadBuktiPembayaran">
+                      <span class="btn-label">
+                        <i class="fas fa-file-image"></i>
+                      </span>
+                      Upload Bukti Pembayaran
+                    </button>
+                  </div>
                 </div>
                 <div class="card-body">
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" style="width: 22%;">No. Pendaftaran</label>
-                    <label class="input-group-text" style="width: 2%;">:</label>
-                    <label class="input-group-text" style="width: 76%;">MA.Pa.270225.0023</label>
-                  </div>
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" style="width: 22%;">Nama</label>
-                    <label class="input-group-text" style="width: 2%;">:</label>
-                    <label class="input-group-text" style="width: 76%;">Dilan Laksa Putra</label>
-                  </div>
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" style="width: 22%;">Biaya Daftar Baru
-                      <span class="badge badge-success">Lunas</span>
-                    </label>
-                    <label class="input-group-text" style="width: 2%;">:</label>
-                    <label class="input-group-text" style="width: 76%;">Rp 200.000
-                      <button class="btn btn-warning btn-xs ms-2">
-                        <span class="btn-label">
-                          Upload Bukti Pembayaran
-                        </span>
-                      </button>
-                    </label>
-                  </div>
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" style="width: 22%;">Lembaga</label>
-                    <label class="input-group-text" style="width: 2%;">:</label>
-                    <label class="input-group-text" style="width: 76%;">MA Putra Al-Aziziyah</label>
-                  </div>
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" style="width: 22%;">Asrama</label>
-                    <label class="input-group-text" style="width: 2%;">:</label>
-                    <label class="input-group-text" style="width: 76%;">Abu Badrul </label>
-                  </div>
-                  <div class="input-group mb-3">
-                    <label class="input-group-text" style="width: 22%;">Biaya Daftar Ulang
-                      <span class="badge badge-danger">Belum Lunas</span>
-                    </label>
-                    <label class="input-group-text" style="width: 2%;">:</label>
-                    <label class="input-group-text" style="width: 76%;">Rp 3.500.000
-                      <button class="btn btn-warning btn-xs ms-2">
-                        <span class="btn-label">
-                          Upload Bukti Pembayaran
-                        </span>
-                      </button>
-                    </label>
+                  <div class="table-responsive">
+                    <table id="data-daftar-ulang" class="display table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th>Tanggal Pembayaran</th>
+                          <th>Jenis Pembayaran</th>
+                          <th>Nominal Pembayaran</th>
+                          <th>Bukti Pembayaran</th>
+                          <th>Status</th>
+                          <th>Keterangan</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>22/02/2025 02:09:27</td>
+                          <td>Daftar Baru</td>
+                          <td>Rp 200.000</td>
+                          <td>Photo/file</td>
+                          <td>Lunas</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>22/02/2025 02:09:27</td>
+                          <td>Daftar Baru</td>
+                          <td>Rp 200.000</td>
+                          <td>Photo/file</td>
+                          <td>Belum Lunas</td>
+                          <td>Photo kwitansi tidak ada</td>
+                        </tr>
+                        <tr>
+                          <td>22/02/2025 02:09:27</td>
+                          <td>Daftar Ulang</td>
+                          <td>Rp 4.500.000</td>
+                          <td>Photo/file</td>
+                          <td>Belum Lunas</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -281,6 +286,52 @@
 
           </div>
           <!-- =================================================================================================== -->
+
+          <!-- Modal Tambah Lembaga-->
+          <div class="modal fade" id="uploadBuktiPembayaran" tabindex="-1" role="dialog" aria-hidden="true"
+            data-bs-backdrop="static">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">
+                    <span class="fw-mediumbold"> Upload</span>
+                    <span class="fw-light"> Bukti Pembayaran </span>
+                  </h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="row">
+                      <div class="input-group">
+                        <span class="input-group-text">Jenis Pembayaran</span>
+                        <select class="form-select" id="jenisPembayaran" name="jenisPembayaran">
+                          <option value="S1">Daftar Baru</option>
+                          <option value="S2">Daftar Ulang</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mt-3">
+                        <input class="form-control" id="formFileMd" type="file">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer border-0">
+                  <button type="button" id="addTahunPelajaran" class="btn btn-primary">
+                    Upload
+                  </button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                    Tutup
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end Modal Lembaga -->
 
 
 
