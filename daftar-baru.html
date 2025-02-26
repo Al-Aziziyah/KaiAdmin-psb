@@ -220,644 +220,453 @@
       <div class="container">
         <div class="page-inner">
           <!-- ============================= FORMULIR =========================================================== -->
-          <form action="" method="post" enctype="multipart/form-data">
-            <!-- LEMBAGA DAN ASRAMA -->
-            <div class="card card-stats card-round">
-              <div class="card-body">
-                <div>
-                  <div class="row card-header">
-                    <div class="col-md-8">
-                      <h1><b>FORMULIR PENDAFTARAN SANTRI BARU</b></h1>
+          <div class="col-md-6 offset-md-3">
+            <form action="" method="post" enctype="multipart/form-data">
+              <!-- LEMBAGA DAN ASRAMA -->
+              <div class="card card-stats card-round">
+                <div class="card-body">
+                  <div>
+                    <div class="text-center">
+                      <h3><b>FORMULIR PENDAFTARAN SANTRI BARU</b></h3>
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group col-md-12 ">
-                        <span class="input-group-text col-md-6" id="basic-addon3">Pilih Lembaga</span>
-                        <div class="col-md-6">
-                          <select class="form-select" id="pilihLembaga" name="lembagaId">
-                            <option>MA Putra</option>
-                            <option>MA Putri</option>
-                            <option>MTs Putra</option>
-                            <option>MTs Putri</option>
-                            <option>MQWH Putra & Putri</option>
-                          </select>
-                        </div>
+                    <div class="row card-body">
+                      <label for="">Pilih Lembaga</label>
+                      <div class="input-group mb-3">
+                        <select class="form-select" id="pilihLembaga" name="lembagaId">
+                          <option>MA Putra</option>
+                          <option>MA Putri</option>
+                          <option>MTs Putra</option>
+                          <option>MTs Putri</option>
+                          <option>MQWH Putra & Putri</option>
+                        </select>
                       </div>
-                    </div>
-                  </div>
-                  <div class="row card-body">
-                    <div class="col-md-4">
-                      <div class="input-group">
-                        <span class="input-group-text col-md-3" id="basic-addon3">Pilihan 1</span>
-                        <div class="col-md-9">
-                          <select class="form-select" id="asrama1" name="asramaPertama">
-                            <option>ASRAMA UTAMA PUTRA</option>
-                            <option>ASRAMA UTAMA PUTRI</option>
-                          </select>
-                        </div>
+                      <label for="">Pilihan Asrama Pertama</label>
+                      <div class="input-group mb-3">
+                        <select class="form-select" id="asrama1" name="asramaPertama">
+                          <option>ASRAMA UTAMA PUTRA</option>
+                          <option>ASRAMA UTAMA PUTRI</option>
+                        </select>
                       </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="input-group">
-                        <span class="input-group-text col-md-3" id="basic-addon3">Pilihan 2</span>
-                        <div class="col-md-9">
-                          <select class="form-select" id="asrama2" name="asramaKedua">
-                            <option>ASRAMA UTAMA PUTRA</option>
-                            <option>ASRAMA UTAMA PUTRI</option>
-                          </select>
-                        </div>
+                      <label for="">Pilihan Asrama Kedua</label>
+                      <div class="input-group mb-3">
+                        <select class="form-select" id="asrama2" name="asramaKedua">
+                          <option>ASRAMA UTAMA PUTRA</option>
+                          <option>ASRAMA UTAMA PUTRI</option>
+                        </select>
                       </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="input-group">
-                        <span class="input-group-text col-md-3" id="basic-addon3">Pilihan 3</span>
-                        <div class="col-md-9">
-                          <select class="form-select" id="asrama3" name="asramaKetiga">
-                            <option>ASRAMA UTAMA PUTRA</option>
-                            <option>ASRAMA UTAMA PUTRI</option>
-                          </select>
-                        </div>
+                      <label for="">Pilihan Asrama Ketiga</label>
+                      <div class="input-group mb-3">
+                        <select class="form-select" id="asrama3" name="asramaKetiga">
+                          <option>ASRAMA UTAMA PUTRA</option>
+                          <option>ASRAMA UTAMA PUTRI</option>
+                        </select>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- DATA SANTRI -->
-            <div class="card card-stats card-round">
-              <div class="card-body">
-                <h5><b>A. DATA CALON PESERTA DIDIK</b></h5>
-                <div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">NISN (Nomor Induk Siswa Nasional) </span>
-                        <input type="number" class="form-control" id="NISN" name="nisn"
-                          placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3" />
+              <!-- DATA SANTRI -->
+              <div class="card card-stats card-round">
+                <div class="card-body">
+                  <h5><b>A. DATA CALON PESERTA DIDIK</b></h5>
+                  <div>
+                    <label for="">NISN</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="NISN" name="nisn"
+                        placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">NIK Siswa</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="NISN" name="nikSiswa"
+                        placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Nama Lengkap <i>(Sesuai Ijazah)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="nama-siswa" name="namaSiswa"
+                        placeholder="Nama Lengkap Siswa" aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Jenis Kelamin</label>
+                    <div class="input-group d-flex">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="L" name="kelaminSiswa" id="kelaminSiswa" />
+                        <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="P" name="kelaminSiswa" id="kelaminSiswa" />
+                        <label class="form-check-label" for="flexRadioDefault1">Perempuan</label>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">NIK (Nomor Induk Keluarga) Siswa </span>
-                        <input type="number" class="form-control" id="NISN" name="nikSiswa"
-                          placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3" />
+                    <label for="">Tempat Lahir <i>(Sesuai Ijazah)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="tLahirSiswa" name="tLahirSiswa"
+                        placeholder="Tempat Lahir" aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Tanggal Lahir <i>(Sesuai Ijazah)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="date" class="form-control" id="tglLahirSiswa" name="tglLahirSiswa"
+                        placeholder="Tanggal Lahir" aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Sekolah Asal</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="sekolahAsal" name="sekolahAsal"
+                        placeholder="Sekolah Asal" aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Anak ke</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="anakKe" name="anakKe" placeholder="Anak ke"
+                        aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Status dalam keluarga</label>
+                    <div class="input-group mb-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="ANAK_KANDUNG" name="statusAnak"
+                          id="statusAnak" />
+                        <label class="form-check-label" for="flexRadioDefault1">Anak Kandung</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="ANAK_TIRI" name="statusAnak"
+                          id="statusAnak" />
+                        <label class="form-check-label" for="flexRadioDefault1">Anak Tiri</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="ANAK_ANGKAT" name="statusAnak"
+                          id="statusAnak" />
+                        <label class="form-check-label" for="flexRadioDefault1">Anak Angkat</label>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Nama Lengkap <i>(Sesuai Ijazah)</i></span>
-                        <input type="text" class="form-control" id="nama-siswa" name="namaSiswa"
-                          placeholder="Nama Lengkap Siswa" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Jumlah Saudara</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="jumlah-saudara" placeholder="Jumlah Saudara"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group d-flex">
-                        <span class="input-group-text mb-3">Gender</span>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" value="L" name="kelaminSiswa"
-                            id="kelaminSiswa" />
-                          <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" value="P" name="kelaminSiswa"
-                            id="kelaminSiswa" />
-                          <label class="form-check-label" for="flexRadioDefault1">Perempuan</label>
-                        </div>
-                      </div>
+                    <label for="">Jumlah Adik</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="jmlAdik" name="jmlAdik" placeholder="Jumlah Adik"
+                        aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Tempat Lahir <i>(Sesuai Ijazah)</i></span>
-                        <input type="text" class="form-control" id="tLahirSiswa" name="tLahirSiswa"
-                          placeholder="Tempat Lahir" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Jumlah Kakak</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="jmlKakak" name="jmlKakak" placeholder="Jumlah Kakak"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Tanggal Lahir <i>(Sesuai Ijazah)</i></span>
-                        <input type="date" class="form-control" id="tglLahirSiswa" name="tglLahirSiswa"
-                          placeholder="Tanggal Lahir" aria-describedby="basic-addon3" />
-                      </div>
+                    <h6>Alamat Tempat Tinggal Siswa :</h6>
+                    <label for="">Provinsi <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="provinsiSiswa" name="provinsiSiswa">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon3">Sekolah Asal</span>
-                    <input type="text" class="form-control" id="sekolahAsal" name="sekolahAsal"
-                      placeholder="Sekolah Asal" aria-describedby="basic-addon3" />
-                  </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Anak ke</span>
-                        <input type="number" class="form-control" id="anakKe" name="anakKe" placeholder="Anak ke"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Kabupaten/Kota <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="kabSiswa" name="kabSiswa">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                    <div class="col-md-9 d-flex">
-                      <div class="col-md-12">
-                        <div class="input-group">
-                          <span class="input-group-text">Status dalam keluarga</span>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" value="ANAK_KANDUNG" name="statusAnak"
-                              id="statusAnak" />
-                            <label class="form-check-label" for="flexRadioDefault1">Anak Kandung</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" value="ANAK_TIRI" name="statusAnak"
-                              id="statusAnak" />
-                            <label class="form-check-label" for="flexRadioDefault1">Anak Tiri</label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" value="ANAK_ANGKAT" name="statusAnak"
-                              id="statusAnak" />
-                            <label class="form-check-label" for="flexRadioDefault1">Anak Angkat</label>
-                          </div>
-                        </div>
-                      </div>
+                    <label for="">Kecamatan <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="kecSiswa" name="kecSiswa">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Jumlah Saudara</span>
-                        <input type="number" class="form-control" id="jumlah-saudara" placeholder="Jumlah Saudara"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Desa/Kelurahan <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="desaSiswa" name="desaSiswa">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Jumlah Adik</span>
-                        <input type="number" class="form-control" id="jmlAdik" name="jmlAdik" placeholder="Jumlah Adik"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Jalan, Dusun/Lingkungan <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="jlnSiswa" name="jlnSiswa"
+                        placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Jumlah Kakak</span>
-                        <input type="number" class="form-control" id="jmlKakak" name="jmlKakak"
-                          placeholder="Jumlah Kakak" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">RT <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="rtSiswa" name="rtSiswa" placeholder="RT"
+                        aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <h5>Alamat Tempat Tinggal Siswa :</h5>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Provinsi</span>
-                        <select class="form-select" id="provinsiSiswa" name="provinsiSiswa">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">RT <i>(Siswa)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="rwSiswa" name="rwSiswa" placeholder="RW"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Kabupaten/Kota</span>
-                        <select class="form-select" id="kabSiswa" name="kabSiswa">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Kecamatan</span>
-                        <select class="form-select" id="kecSiswa" name="kecSiswa">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Desa/Kelurahan</span>
-                        <select class="form-select" id="desaSiswa" name="desaSiswa">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Dusun/Lingkungan</span>
-                        <input type="text" class="form-control" id="jlnSiswa" name="jlnSiswa"
-                          placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3" />
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">RT</span>
-                        <input type="number" class="form-control" id="rtSiswa" name="rtSiswa" placeholder="RT"
-                          aria-describedby="basic-addon3" />
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">RW</span>
-                        <input type="number" class="form-control" id="rwSiswa" name="rwSiswa" placeholder="RW"
-                          aria-describedby="basic-addon3" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">No. Telp. / HP yang bisa dihubungi</span>
-                        <input type="number" class="form-control" id="hpSiswa" name="hpSiswa"
-                          placeholder="Nomor Telephone / Handphone" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">No. Telp/HP yang bisa dihubungi</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="hpSiswa" name="hpSiswa"
+                        placeholder="Nomor Telephone / Handphone" aria-describedby="basic-addon3" />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- DATA ORANG TUA -->
-            <div class="card card-stats card-round">
-              <div class="card-body">
-                <h5><b>B. DATA ORANG TUA KANDUNG</b></h5>
-                <div>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">No KK</span>
-                        <input type="text" class="form-control" id="noKk" name="noKk" placeholder="Nomor Kartu Keluarga"
-                          aria-describedby="basic-addon3" />
-                      </div>
+              <!-- DATA ORANG TUA -->
+              <div class="card card-stats card-round">
+                <div class="card-body">
+                  <h5><b>B. DATA ORANG TUA KANDUNG</b></h5>
+                  <div>
+                    <label for="">Nomor Kartu Keluarga</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="noKk" name="noKk" placeholder="Nomor Kartu Keluarga"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">NIK Ayah</span>
-                        <input type="text" class="form-control" id="nikAyah" name="nikAyah" placeholder="NIK Ayah"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">NIK Ayah</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="nikAyah" name="nikAyah" placeholder="NIK Ayah"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">NIK Ibu</span>
-                        <input type="text" class="form-control" id="nikIbu" name="nikIbu" placeholder="NIK Ibu"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">NIK Ibu</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="nikIbu" name="nikIbu" placeholder="NIK Ibu"
+                        aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Nama Lengkap Ayah</span>
-                        <input type="text" class="form-control" id="namaAyah" name="namaAyah"
-                          placeholder="Nama Lengkap Ayah" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Nama Lengkap Ayah</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="namaAyah" name="namaAyah"
+                        placeholder="Nama Lengkap Ayah" aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Nama Lengkap Ibu</span>
-                        <input type="text" class="form-control" id="namaIbu" name="namaIbu"
-                          placeholder="Nama Lengkap Ibu" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Nama Lengkap Ibu</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="namaIbu" name="namaIbu" placeholder="Nama Lengkap Ibu"
+                        aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Pendidikan Terakhir Ayah</span>
-                        <select class="form-select" id="pendidikanAyah" name="pendidikanAyah">
-                          <option value="SD/MI/SEDERAJAT">SD/MI/Sederajat</option>
-                          <option value="SMP/MTs/SEDERAJAT">SMP/MTS/Sederajat</option>
-                          <option value="SMA/MA/SEDERAJAT">SMA/MA/Sederajat</option>
-                          <option value="D1">D1/Sederajat</option>
-                          <option value="D2">D2/Sederajat</option>
-                          <option value="D3">D3/Sederajat</option>
-                          <option value="S1">S1</option>
-                          <option value="S2">S2</option>
-                          <option value="S3">S3</option>
-                          <option value="TIDAK BERSEKOLAH">Tidak Bersekolah</option>
-                        </select>
-                      </div>
+                    <label for="">Pendidikan Terakhir Ayah</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="pendidikanAyah" name="pendidikanAyah">
+                        <option value="SD/MI/SEDERAJAT">SD/MI/Sederajat</option>
+                        <option value="SMP/MTs/SEDERAJAT">SMP/MTS/Sederajat</option>
+                        <option value="SMA/MA/SEDERAJAT">SMA/MA/Sederajat</option>
+                        <option value="D1">D1/Sederajat</option>
+                        <option value="D2">D2/Sederajat</option>
+                        <option value="D3">D3/Sederajat</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="TIDAK BERSEKOLAH">Tidak Bersekolah</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Pendidikan Terakhir Ibu</span>
-                        <select class="form-select" id="pendidikanIbu" name="pendidikanIbu">
-                          <option value="SD/MI/SEDERAJAT">SD/MI/Sederajat</option>
-                          <option value="SMP/MTs/SEDERAJAT">SMP/MTS/Sederajat</option>
-                          <option value="SMA/MA/SEDERAJAT">SMA/MA/Sederajat</option>
-                          <option value="D1">D1/Sederajat</option>
-                          <option value="D2">D2/Sederajat</option>
-                          <option value="D3">D3/Sederajat</option>
-                          <option value="S1">S1</option>
-                          <option value="S2">S2</option>
-                          <option value="S3">S3</option>
-                          <option value="TIDAK BERSEKOLAH">Tidak Bersekolah</option>
-                        </select>
-                      </div>
+                    <label for="">Pendidikan Terakhir Ibu</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="pendidikanIbu" name="pendidikanIbu">
+                        <option value="SD/MI/SEDERAJAT">SD/MI/Sederajat</option>
+                        <option value="SMP/MTs/SEDERAJAT">SMP/MTS/Sederajat</option>
+                        <option value="SMA/MA/SEDERAJAT">SMA/MA/Sederajat</option>
+                        <option value="D1">D1/Sederajat</option>
+                        <option value="D2">D2/Sederajat</option>
+                        <option value="D3">D3/Sederajat</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="TIDAK BERSEKOLAH">Tidak Bersekolah</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Pekerjaan Ayah</span>
-                        <input type="text" class="form-control" id="pekerjaanAyah" name="pekerjaanAyah"
-                          placeholder="Pekerjaan Ayah" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Pekerjaan Ayah</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="pekerjaanAyah" name="pekerjaanAyah"
+                        placeholder="Pekerjaan Ayah" aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Pekerjaan Ibu</span>
-                        <input type="text" class="form-control" id="pekerjaanIbu" name="pekerjaanIbu"
-                          placeholder="Pekerjaan Ibu" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Pekerjaan Ibu</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="pekerjaanIbu" name="pekerjaanIbu"
+                        placeholder="Pekerjaan Ibu" aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Penghasilan Ayah</span>
-                        <select class="form-select" id="penghasilanAyah" name="penghasilanAyah">
-                          <option value="1_MIL_LESS">Kurang dari Rp 1jt/bln</option>
-                          <option value="1_TO_2_MIL">Antara Rp 1-2jt/bln</option>
-                          <option value="2_MIL_MORE">Lebih dari Rp 2jt/bln</option>
-                        </select>
-                      </div>
+                    <label for="">Penghasilan Ayah</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="penghasilanAyah" name="penghasilanAyah">
+                        <option value="1_MIL_LESS">Kurang dari Rp 1jt/bln</option>
+                        <option value="1_TO_2_MIL">Antara Rp 1-2jt/bln</option>
+                        <option value="2_MIL_MORE">Lebih dari Rp 2jt/bln</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Penghasilan Ibu</span>
-                        <select class="form-select" id="penghasilanIbu" name="penghasilanIbu">
-                          <option value="1_MIL_LESS">Kurang dari Rp 1jt/bln</option>
-                          <option value="1_TO_2_MIL">Antara Rp 1-2jt/bln</option>
-                          <option value="2_MIL_MORE">Lebih dari Rp 2jt/bln</option>
-                        </select>
-                      </div>
+                    <label for="">Penghasilan Ibu</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="penghasilanIbu" name="penghasilanIbu">
+                        <option value="1_MIL_LESS">Kurang dari Rp 1jt/bln</option>
+                        <option value="1_TO_2_MIL">Antara Rp 1-2jt/bln</option>
+                        <option value="2_MIL_MORE">Lebih dari Rp 2jt/bln</option>
+                      </select>
                     </div>
-                  </div>
-                  <h5>Alamat Tempat Tinggal Orangtua :</h5>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Provinsi</span>
-                        <select class="form-select" id="provinsiOrtu" name="provinsiOrtu">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <h6>Alamat Tempat Tinggal Orangtua :</h6>
+                    <label for="">Provinsi <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="provinsiOrtu" name="provinsiOrtu">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Kabupaten/Kota</span>
-                        <select class="form-select" id="kabOrtu" name="kabOrtu">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">Kabupaten/Kota <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="kabOrtu" name="kabOrtu">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Kecamatan</span>
-                        <select class="form-select" id="kecOrtu" name="kecOrtu">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">Kecamatan <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="kecOrtu" name="kecOrtu">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Desa/Kelurahan</span>
-                        <select class="form-select" id="desaOrtu" name="desaOrtu">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">Desa/Kelurahan <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="desaOrtu" name="desaOrtu">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Dusun/Lingkungan</span>
-                        <input type="text" class="form-control" id="jlnOrtu" name="jlnOrtu"
-                          placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Jalan, Dusun/Lingkungan <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="jlnOrtu" name="jlnOrtu" placeholder="Dusun/Lingkungan"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-2">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">RT</span>
-                        <input type="number" class="form-control" id="rtOrtu" name="rtOrtu" placeholder="RT"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">RT <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="rtOrtu" name="rtOrtu" placeholder="RT"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-2">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">RW</span>
-                        <input type="number" class="form-control" id="rwOrtu" name="rwOrtu" placeholder="RW"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">RW <i>(Orangtua)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="rwOrtu" name="rwOrtu" placeholder="RW"
+                        aria-describedby="basic-addon3" />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- DATA WALI -->
-            <div class="card card-stats card-round">
-              <div class="card-body">
-                <h5><b>C. DATA WALI</b></h5>
-                <div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Nama Lengkap Wali</span>
-                        <input type="text" class="form-control" id="namaWali" name="namaWali"
-                          placeholder="Nama Lengkap Wali" aria-describedby="basic-addon3" />
+              <!-- DATA WALI -->
+              <div class="card card-stats card-round">
+                <div class="card-body">
+                  <h5><b>C. DATA WALI</b></h5>
+                  <div>
+                    <label for="">Nama Lengkap Wali</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="namaWali" name="namaWali"
+                        placeholder="Nama Lengkap Wali" aria-describedby="basic-addon3" />
+                    </div>
+                    <label for="">Jenis Kelamin</label>
+                    <div class="input-group d-flex">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="L" name="kelaminWali" id="kelaminWali" />
+                        <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="P" name="kelaminWali" id="kelaminWali" />
+                        <label class="form-check-label" for="flexRadioDefault1">Perempuan</label>
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <div class="input-group d-flex">
-                        <span class="input-group-text mb-3">Gender</span>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" value="L" name="kelaminWali" id="kelaminWali" />
-                          <label class="form-check-label" for="flexRadioDefault1">Laki-laki</label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" value="P" name="kelaminWali" id="kelaminWali" />
-                          <label class="form-check-label" for="flexRadioDefault1">Perempuan</label>
-                        </div>
-                      </div>
+                    <label for="">Pekerjaan Wali</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="pekerjaanWali" name="pekerjaanWali"
+                        placeholder="Pekerjaan Wali" aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Pekerjaan Wali</span>
-                        <input type="text" class="form-control" id="pekerjaanWali" name="pekerjaanWali"
-                          placeholder="Pekerjaan Wali" aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">Pendidikan Wali</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="pendidikanWali" name="pendidikanWali">
+                        <option value="SD/MI/SEDERAJAT">SD/MI/Sederajat</option>
+                        <option value="SMP/MTs/SEDERAJAT">SMP/MTS/Sederajat</option>
+                        <option value="SMA/MA/SEDERAJAT">SMA/MA/Sederajat</option>
+                        <option value="D1">D1/Sederajat</option>
+                        <option value="D2">D2/Sederajat</option>
+                        <option value="D3">D3/Sederajat</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="TIDAK BERSEKOLAH">Tidak Bersekolah</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
+                    <label for="">Penghasilan Wali</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="penghasilanWali" name="penghasilanWali">
+                        <option value="1_MIL_LESS">Kurang dari Rp 1jt/bln</option>
+                        <option value="1_TO_2_MIL">Antara Rp 1-2jt/bln</option>
+                        <option value="2_MIL_MORE">Lebih dari Rp 2jt/bln</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">Pendidikan Wali</span>
-                        <select class="form-select" id="pendidikanWali" name="pendidikanWali">
-                          <option value="SD/MI/SEDERAJAT">SD/MI/Sederajat</option>
-                          <option value="SMP/MTs/SEDERAJAT">SMP/MTS/Sederajat</option>
-                          <option value="SMA/MA/SEDERAJAT">SMA/MA/Sederajat</option>
-                          <option value="D1">D1/Sederajat</option>
-                          <option value="D2">D2/Sederajat</option>
-                          <option value="D3">D3/Sederajat</option>
-                          <option value="S1">S1</option>
-                          <option value="S2">S2</option>
-                          <option value="S3">S3</option>
-                          <option value="TIDAK BERSEKOLAH">Tidak Bersekolah</option>
-                        </select>
-                      </div>
+                    <h6>Alamat Tempat Tinggal Wali :</h6>
+                    <label for="">Provinsi <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="provinsiWali" name="provinsiWali">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group">
-                        <span class="input-group-text">Penghasilan Wali</span>
-                        <select class="form-select" id="penghasilanWali" name="penghasilanWali">
-                          <option value="1_MIL_LESS">Kurang dari Rp 1jt/bln</option>
-                          <option value="1_TO_2_MIL">Antara Rp 1-2jt/bln</option>
-                          <option value="2_MIL_MORE">Lebih dari Rp 2jt/bln</option>
-                        </select>
-                      </div>
+                    <label for="">Kabupaten/Kota <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="kabWali" name="kabWali">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                  </div>
-                  <h5>Alamat Tempat Tinggal Wali :</h5>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Provinsi</span>
-                        <select class="form-select" id="provinsiWali" name="provinsiWali">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">Kecamatan <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="kecWali" name="kecWali">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Kabupaten/Kota</span>
-                        <select class="form-select" id="kabWali" name="kabWali">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">Desa/Kelurahan <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="desaWali" name="desaWali">
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Kecamatan</span>
-                        <select class="form-select" id="kecWali" name="kecWali">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">Jalan, Dusun/Lingkungan <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="jlnWali" name="jlnWali" placeholder="Dusun/Lingkungan"
+                        aria-describedby="basic-addon3" />
                     </div>
-                    <div class="col-md-6">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text">Desa/Kelurahan</span>
-                        <select class="form-select" id="desaWali" name="desaWali">
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </div>
+                    <label for="">RT <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="rtWali" name="rtWali" placeholder="RT"
+                        aria-describedby="basic-addon3" />
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">Dusun/Lingkungan</span>
-                        <input type="text" class="form-control" id="jlnWali" name="jlnWali"
-                          placeholder="Dusun/Lingkungan" aria-describedby="basic-addon3" />
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">RT</span>
-                        <input type="number" class="form-control" id="rtWali" name="rtWali" placeholder="RT"
-                          aria-describedby="basic-addon3" />
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon3">RW</span>
-                        <input type="number" class="form-control" id="rwWali" name="rwWali" placeholder="RW"
-                          aria-describedby="basic-addon3" />
-                      </div>
+                    <label for="">RW <i>(Wali)</i></label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="rwWali" name="rwWali" placeholder="RW"
+                        aria-describedby="basic-addon3" />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Jenis Tes Masuk -->
-            <div class="card card-stats card-round">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <h5><b>D. Jenis tes masuk</b></h5>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="selectgroup w-100">
-                          <label class="selectgroup-item">
-                            <input type="radio" name="testType" id="testType" value="OFFLINE" class="selectgroup-input"
-                              checked />
-                            <span class="selectgroup-button">Tes Masuk Offline</span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="selectgroup w-100">
-                          <label class="selectgroup-item">
-                            <input type="radio" name="testType" id="testType" value="ONLINE"
-                              class="selectgroup-input" />
-                            <span class="selectgroup-button">Tes Masuk Online</span>
-                          </label>
-                        </div>
-                      </div>
+              <!-- Jenis Tes Masuk -->
+              <div class="card card-stats card-round">
+                <div class="card-body">
+                  <h5><b>D. Jenis tes masuk</b></h5>
+                  <div class="input-group d-flex">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="OFFLINE" name="tesType" id="kelaminWali" />
+                      <label class="form-check-label" for="flexRadioDefault1">Offline</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" value="ONLINE" name="tesType" id="kelaminWali" />
+                      <label class="form-check-label" for="flexRadioDefault1">Online</label>
                     </div>
                   </div>
-                  <div class="col-md-2">
-                    <h5><b>E. Kategori</b></h5>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="selectgroup selectgroup-pills">
-                      <label class="selectgroup-item">
-                        <input type="checkbox" name="alumni" value="1" class="selectgroup-input" />
-                        <span class="selectgroup-button"><i class="fas fa-graduation-cap"></i> Alumni</span>
-                      </label>
-                      <label class="selectgroup-item">
-                        <input type="checkbox" name="gratis" value="1" class="selectgroup-input" />
-                        <span class="selectgroup-button"><i class="fas fa-money-bill-wave"></i> Gratis Pendaftaran</span>
-                      </label>
-                    </div>
-                    <div class="selectgroup selectgroup-pills">
-                    </div>
-                  </div>
+                  <h5><b>E. Kategori</b></h5>
+                  <label class="selectgroup-item">
+                    <input type="checkbox" name="alumni" value="1" class="selectgroup-input" />
+                    <span class="selectgroup-button"><i class="fas fa-graduation-cap"></i> Alumni</span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="checkbox" name="gratis" value="1" class="selectgroup-input" />
+                    <span class="selectgroup-button"><i class="fas fa-money-bill-wave"></i> Gratis Pendaftaran</span>
+                  </label>
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <button class="btn btn-primary btn-lg col-md-12">
-                  <h3>SIMPAN PENDAFTARAN</h3>
-                </button>
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-primary btn-lg col-md-12">
+                    <h3>SIMPAN PENDAFTARAN</h3>
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
 
 
           <!-- ============================= end FORMULIR ======================================================= -->
