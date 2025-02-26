@@ -260,7 +260,7 @@
                     <table id="data-santri-baru" class="display table table-striped table-hover">
                       <thead>
                         <tr>
-                          <th>Tangal Waktu Daftar</th>
+                          <th>Tangal & Waktu Daftar</th>
                           <th>Nomor Daftar</th>
                           <th>Nama Santri</th>
                           <th>No HP</th>
@@ -280,7 +280,7 @@
                           <td>Asrama Utama Putra</td>
                           <td>
                             <div class="btn-group">
-                              <button class="btn btn-black btn-xs">
+                              <button class="btn btn-success btn-xs">
                                 <span class="btn-label">
                                   <i class="fa fa-print"></i>
                                   Cetak
@@ -297,6 +297,13 @@
                                 <span class="btn-label">
                                   <i class="fa fa-trash"></i>
                                   Hapus
+                                </span>
+                              </button>
+                              <button class="btn btn-black btn-xs" data-bs-toggle="modal"
+                                data-bs-target="#resetPassword">
+                                <span class="btn-label">
+                                  <i class="fa fa-key"></i>
+                                  Reset
                                 </span>
                               </button>
                               <button class="btn btn-warning btn-xs" data-bs-toggle="modal"
@@ -318,7 +325,7 @@
                           <td>Asrama Utama Putra</td>
                           <td>
                             <div class="btn-group">
-                              <button class="btn btn-black btn-xs">
+                              <button class="btn btn-success btn-xs">
                                 <span class="btn-label">
                                   <i class="fa fa-print"></i>
                                   Cetak
@@ -335,6 +342,13 @@
                                 <span class="btn-label">
                                   <i class="fa fa-trash"></i>
                                   Hapus
+                                </span>
+                              </button>
+                              <button class="btn btn-black btn-xs" data-bs-toggle="modal"
+                                data-bs-target="#resetPassword">
+                                <span class="btn-label">
+                                  <i class="fa fa-key"></i>
+                                  Reset
                                 </span>
                               </button>
                               <button class="btn btn-warning btn-xs" data-bs-toggle="modal"
@@ -427,6 +441,80 @@
             </div>
           </div>
           <!-- end Modal Verivikasi PSB -->
+
+          <!-- Modal Reset Password -->
+          <div class="modal fade" id="resetPassword" tabindex="-1" role="dialog" aria-hidden="true"
+            data-bs-backdrop="static">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title">
+                    <span class="fw-mediumbold">Reset</span>
+                    <span class="fw-light">Password </span>
+                  </h5>
+                  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <form>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group form-group-default">
+                          <label>Nama :</label>
+                          <span>Jimmy Denis</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group form-group-default">
+                          <label>Lembaga :</label>
+                          <span>Madrasah Aliyah Putra</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group form-group-default">
+                          <label>Nomor Pendaftaran :</label>
+                          <span>MA.Pa-232424.2025</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form-group form-group-default">
+                          <label>Nomor HP :</label>
+                          <span>087865764543</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="input-group mb-3">
+                          <label class="input-group-text">Masukkan password baru</label>
+                          <input type="number" class="form-control" id="password" name="password"
+                            placeholder="Masukkan password baru" aria-describedby="basic-addon3" />
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="input-group">
+                          <label class="input-group-text">Konfirmasi password baru</label>
+                          <input type="number" class="form-control" id="passwordConfirm" name="passwordConfirm"
+                            placeholder="Konfirmasi password baru" aria-describedby="basic-addon3" />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer border-0">
+                  <button type="button" id="addRowButton" class="btn btn-primary">
+                    <i class="fa fa-check"></i>
+                    Simpan
+                  </button>
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="">
+                    <i class="fas fa-minus-circle"></i>
+                    Tutup
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end Modal Reset Password -->
 
           <!-- Modal Edit Santri -->
           <div class="modal fade" id="editSantri" tabindex="-1" role="dialog" aria-hidden="true"
