@@ -233,52 +233,7 @@
                     <div class="card-title">Verifikasi Pendaftar Baru</div>
                   </div>
                   <div class="card-list py-4">
-                    <div class="item-list">
-                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                        <i class="fa fa-check"></i>
-                      </button>
-                      <div class="info-user ms-3">
-                        <div class="username">Jimmy Denis</div>
-                        <div class="status">MA Putra</div>
-                      </div>
 
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
-                        <span class="btn-label">
-                          <i class="fa fa-check"></i>
-                        </span>
-                        Verivikasi
-                      </button>
-                    </div>
-                    <div class="item-list">
-                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                        <i class="fa fa-check"></i>
-                      </button>
-                      <div class="info-user ms-3">
-                        <div class="username">Chandra Felix</div>
-                        <div class="status">MTs. Putra</div>
-                      </div>
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
-                        <span class="btn-label">
-                          <i class="fa fa-check"></i>
-                        </span>
-                        Verivikasi
-                      </button>
-                    </div>
-                    <div class="item-list">
-                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                        <i class="fa fa-check"></i>
-                      </button>
-                      <div class="info-user ms-3">
-                        <div class="username">Talha</div>
-                        <div class="status">MQWH Putra</div>
-                      </div>
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
-                        <span class="btn-label">
-                          <i class="fa fa-check"></i>
-                        </span>
-                        Verivikasi
-                      </button>
-                    </div>
                     <div class="item-list">
                       <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
                         <i class="fa fa-check"></i>
@@ -287,43 +242,17 @@
                         <div class="username">Baby Shila</div>
                         <div class="status">MA Putri</div>
                       </div>
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
+                      <button class="btn btn-primary" data-paymentid="Payment Id" data-paymenttype="Payment Type"
+                        data-nama="Nama Santri" data-lembaga="Lembaga Santri" data-nodaftar="Nomor Pendaftaran"
+                        data-nohp="Nomor HP Santri" data-bukti="assets/img/struk kwitansi.webp" data-bs-toggle="modal"
+                        data-bs-target="#verifikasi">
                         <span class="btn-label">
                           <i class="fa fa-check"></i>
                         </span>
                         Verivikasi
                       </button>
                     </div>
-                    <div class="item-list">
-                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                        <i class="fa fa-check"></i>
-                      </button>
-                      <div class="info-user ms-3">
-                        <div class="username">Amanda</div>
-                        <div class="status">MTs. Putri</div>
-                      </div>
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
-                        <span class="btn-label">
-                          <i class="fa fa-check"></i>
-                        </span>
-                        Verivikasi
-                      </button>
-                    </div>
-                    <div class="item-list">
-                      <button class="btn btn-icon btn-round btn-primary btn-sm me-2">
-                        <i class="fa fa-check"></i>
-                      </button>
-                      <div class="info-user ms-3">
-                        <div class="username">Farrah</div>
-                        <div class="status">MQWH Putri</div>
-                      </div>
-                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifikasi">
-                        <span class="btn-label">
-                          <i class="fa fa-check"></i>
-                        </span>
-                        Verivikasi
-                      </button>
-                    </div>
+
                   </div>
 
 
@@ -490,79 +419,88 @@
             <!-- end Verifikasi Pembayaran Daftar Ulang -->
 
             <!-- Modal Verifikasi PSB -->
-            <div class="modal fade" id="verifikasi" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <h5 class="modal-title">
-                      <span class="fw-mediumbold">Verivikasi</span>
-                      <span class="fw-light">Bukti Pendaftaran </span>
-                    </h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-
-                    <form>
-                      <div class="row">
+            <form method="post" action="#verivikasi">
+              <div class="modal fade modal-xl" id="verifikasi" tabindex="-1" role="dialog" aria-hidden="true"
+                data-bs-backdrop="static">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <h5 class="modal-title">
+                        <span class="fw-mediumbold">Verivikasi</span>
+                        <span class="fw-light">Bukti Pendaftaran </span>
+                      </h5>
+                      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body row">
+                      <div class="col-md-6">
+                        //
+                      </div>
+                      <div class="col-md-6">
                         <div class="col-sm-12">
                           <div class="form-group form-group-default">
                             <label>Jenis Pembayaran :</label>
-                            <span>Pembayaran PSB</span>
+                            <span id="paymentType"></span>
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="form-group form-group-default">
                             <label>Nama :</label>
-                            <span>Jimmy Denis</span>
+                            <span id="nama"></span>
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="form-group form-group-default">
                             <label>Lembaga :</label>
-                            <span>Madrasah Aliyah Putra</span>
+                            <span id="lembaga"></span>
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="form-group form-group-default">
                             <label>Nomor Pendaftaran :</label>
-                            <span>MA.Pa-232424.2025</span>
+                            <span id="noDaftar"></span>
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="form-group form-group-default">
                             <label>Nomor HP :</label>
-                            <span>087865764543</span>
+                            <span id="noHp"></span>
                           </div>
                         </div>
+                      </div>
+                      <input type="hidden" name="idPayment" id="idPayment">
+                      <div class="row">
                         <div class="col-sm-12">
                           <div class="form-group form-group-default">
                             <label>Photo Bukti Pendaftaran</label>
-                            <img src="assets/img/struk kwitansi.webp" width="450">
+                            <img id="bukti" src="" width="450">
                           </div>
                         </div>
 
                       </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer border-0">
-                    <button type="button" id="addRowButton" class="btn btn-primary">
-                      <i class="fa fa-check"></i>
-                      Verivikasi
-                    </button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="alert_verifikasi_psb">
-                      <i class="fas fa-minus-circle"></i>
-                      Rejected
-                    </button>
+
+                    </div>
+                    <div class="modal-footer border-0">
+                      <button type="submit" name="status" value="TRANSFER_CONFIRMED" id="addRowButton"
+                        class="btn btn-primary">
+                        <i class="fa fa-check"></i>
+                        Verivikasi
+                      </button>
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="alert_verifikasi_psb">
+                        <i class="fas fa-minus-circle"></i>
+                        Rejected
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
             <!-- end Modal Verifikasi PSB -->
 
             <!-- Modal Verifikasi Daftar Ulang -->
-            <div class="modal fade" id="verifikasiDU" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal fade" id="verifikasiDU" tabindex="-1" role="dialog" aria-hidden="true"
+              data-bs-backdrop="static">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header border-0">
@@ -635,10 +573,16 @@
           </div>
           <!-- end VERIFIKASI PEMBAYARAN ONLINE -->
           <!-- =================================================================================================== -->
+          <form id="rejectionForm" action="rejected" method="get">
+            <input type="hidden" name="paymentId" id="paymentId">
+            <input type="hidden" name="status" value="REJECTED">
+            <input type="hidden" name="rejectionStatus" id="rejectionStatus">
+          </form>
 
         </div>
       </div>
     </div>
+
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery-3.7.1.min.js"></script>
     <script src="assets/js/core/popper.min.js"></script>
@@ -697,9 +641,12 @@
               className: "btn btn-success",
             },
           },
-        }).then(function () {
-          swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
-        });
+        }).then(function (isConfirmed) {
+          if (isConfirmed) {
+            document.getElementById("rejectionStatus").value = $("#input-field").val();
+            $("#rejectionForm").submit();
+          }
+        });;
       });
       $("#alert_verifikasi_du").click(function (e) {
         swal({
@@ -719,14 +666,36 @@
               className: "btn btn-success",
             },
           },
-        }).then(function () {
-          swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
+        }).then(function (isConfirmed) {
+          if (isConfirmed) {
+            swal("", "Alasan sudah diberikan : " + $("#input-field").val(), "success");
+            $("#verivikasi").submit();
+          }
         });
       });
     </script>
     <!-- end SCRIPT ALERT VERIFIKASI -->
     <!-- =================================================================================================== -->
+    <script>
+      $('#verifikasi').on('show.bs.modal', function (event) {
+        var paymentId = $(event.relatedTarget).data('paymentid');
+        var paymentType = $(event.relatedTarget).data('paymenttype');
+        var nama = $(event.relatedTarget).data('nama');
+        var lembaga = $(event.relatedTarget).data('lembaga');
+        var noDaftar = $(event.relatedTarget).data('nodaftar');
+        var noHp = $(event.relatedTarget).data('nohp');
+        var bukti = $(event.relatedTarget).data('bukti');
+        document.getElementById("paymentId").value = paymentId;
+        $(this).find('#paymentId').html(paymentId);
+        $(this).find('#paymentType').html(paymentType);
+        $(this).find('#nama').html(nama);
+        $(this).find('#lembaga').html(lembaga);
+        $(this).find('#noDaftar').html(noDaftar);
+        $(this).find('#noHp').html(noHp);
+        $(this).find('#bukti').attr("src", bukti);
+      });
 
+    </script>
 
 </body>
 
