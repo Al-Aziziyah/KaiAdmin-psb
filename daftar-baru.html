@@ -273,18 +273,20 @@
                   <div>
                     <label for="">NISN</label>
                     <div class="input-group mb-3">
-                      <input type="number" class="form-control" id="NISN" name="nisn"
-                        placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3" />
+                      <input type="number" class="form-control" id="nisn" name="nisn" maxlength="10"
+                        placeholder="NISN (Nomor Induk Siswa Nasional) " aria-describedby="basic-addon3"
+                        oninput="checkMaxLength(this)" />
                     </div>
                     <label for="">NIK Siswa</label>
                     <div class="input-group mb-3">
-                      <input type="number" class="form-control" id="NISN" name="nikSiswa"
-                        placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3" />
+                      <input type="number" class="form-control" id="nikSiswa" name="nikSiswa" maxlength="16"
+                        placeholder="NIK (Nomor Induk Keluarga) Siswa" aria-describedby="basic-addon3"
+                        oninput="checkMaxLength(this)" />
                     </div>
                     <label for="">Nama Lengkap <i>(Sesuai Ijazah)</i></label>
                     <div class="input-group mb-3">
                       <input type="text" class="form-control" id="nama-siswa" name="namaSiswa"
-                        placeholder="Nama Lengkap Siswa" aria-describedby="basic-addon3" />
+                        placeholder="Nama Lengkap Siswa" aria-describedby="basic-addon3" oninput="changeColor(this)" />
                     </div>
                     <label for="">Jenis Kelamin</label>
                     <div class="input-group d-flex">
@@ -300,12 +302,12 @@
                     <label for="">Tempat Lahir <i>(Sesuai Ijazah)</i></label>
                     <div class="input-group mb-3">
                       <input type="text" class="form-control" id="tLahirSiswa" name="tLahirSiswa"
-                        placeholder="Tempat Lahir" aria-describedby="basic-addon3" />
+                        placeholder="Tempat Lahir" aria-describedby="basic-addon3" oninput="changeColor(this)" />
                     </div>
                     <label for="">Tanggal Lahir <i>(Sesuai Ijazah)</i></label>
                     <div class="input-group mb-3">
                       <input type="date" class="form-control" id="tglLahirSiswa" name="tglLahirSiswa"
-                        placeholder="Tanggal Lahir" aria-describedby="basic-addon3" />
+                        placeholder="Tanggal Lahir" aria-describedby="basic-addon3" oninput="changeColor(this)" />
                     </div>
                     <label for="">Sekolah Asal</label>
                     <div class="input-group mb-3">
@@ -741,5 +743,24 @@
 
 
 </body>
+<script>
+  function changeColor(input) {
+    if (input.value.trim() !== "") {
+      input.style.backgroundColor = "#FDFEC3";
+    } else {
+      input.style.backgroundColor = "";
+    }
+  }
+ 
+  function checkMaxLength(input) {
+    if (input.value.length >= input.maxLength) {
+      input.style.backgroundColor = "#FDFEC3"; 
+      input.style.color = "black"; 
+    } else {
+      input.style.backgroundColor = ""; 
+      input.style.color = ""; 
+    }
+  }
+</script>
 
 </html>
